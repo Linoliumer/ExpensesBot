@@ -1,0 +1,10 @@
+{
+  "MENU": {
+    "HANDLER": {
+      "MAIN": "HANDLER_MAIN"
+    },
+    "TEXT": {
+      "MAIN": "TEXT_MAIN"
+    }
+  }
+}

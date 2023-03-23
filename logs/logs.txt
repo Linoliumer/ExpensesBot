@@ -1,0 +1,276 @@
+------------------------
+
+Time: 2023-03-23 05:08:11,463
+Level: ERROR
+Message: Loader. Formations of elements.
+Error: [Errno 2] No such file or directory: '/config/config.json'
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\create_bot.py", line 30, in <module>
+    fConfig = modules.File(CONFIG_PATH)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\modules\file.py", line 10, in __init__
+    self.text = self.open_file()
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\modules\file.py", line 17, in open_file
+    with open(self.path, "r", encoding="utf-8") as file_data:
+FileNotFoundError: [Errno 2] No such file or directory: '/config/config.json'
+------------------------
+
+Time: 2023-03-23 05:08:33,772
+Level: ERROR
+Message: Loader. Formations of elements.
+Error: [Errno 2] No such file or directory: '/config/config.json'
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\create_bot.py", line 30, in <module>
+    fConfig = File(CONFIG_PATH)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\modules\file.py", line 10, in __init__
+    self.text = self.open_file()
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\modules\file.py", line 17, in open_file
+    with open(self.path, "r", encoding="utf-8") as file_data:
+FileNotFoundError: [Errno 2] No such file or directory: '/config/config.json'
+------------------------
+
+Time: 2023-03-23 05:35:16,489
+Level: INFO
+Message: WEBHOOK WAS SET
+
+------------------------
+
+Time: 2023-03-23 05:35:35,848
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 05:36:01,171
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 05:37:10,464
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 05:37:41,852
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 05:37:44,943
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 05:38:51,242
+Level: INFO
+Message: WEBHOOK SET
+
+------------------------
+
+Time: 2023-03-23 05:38:51,244
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 05:38:51,264
+Level: INFO
+Message: UPDATE!
+
+------------------------
+
+Time: 2023-03-23 05:38:51,327
+Level: INFO
+Message: UPDATE!
+
+------------------------
+
+Time: 2023-03-23 05:38:51,387
+Level: INFO
+Message: UPDATE!
+
+------------------------
+
+Time: 2023-03-23 05:38:51,447
+Level: INFO
+Message: UPDATE!
+
+------------------------
+
+Time: 2023-03-23 05:38:51,507
+Level: INFO
+Message: UPDATE!
+
+------------------------
+
+Time: 2023-03-23 05:38:51,567
+Level: INFO
+Message: UPDATE!
+
+------------------------
+
+Time: 2023-03-23 05:38:51,627
+Level: INFO
+Message: UPDATE!
+
+------------------------
+
+Time: 2023-03-23 05:38:51,688
+Level: INFO
+Message: UPDATE!
+
+------------------------
+
+Time: 2023-03-23 05:38:51,755
+Level: INFO
+Message: UPDATE!
+
+------------------------
+
+Time: 2023-03-23 05:38:51,816
+Level: INFO
+Message: UPDATE!
+
+------------------------
+
+Time: 2023-03-23 05:38:51,881
+Level: INFO
+Message: UPDATE!
+
+------------------------
+
+Time: 2023-03-23 05:38:59,739
+Level: INFO
+Message: UPDATE!
+
+------------------------
+
+Time: 2023-03-23 05:41:21,505
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 05:41:48,723
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 05:41:57,347
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 05:45:05,644
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 06:04:19,188
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 06:06:14,177
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 06:07:31,647
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 06:23:46,441
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 06:25:01,745
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 06:25:28,472
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 06:26:05,235
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 06:26:24,122
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 06:29:21,193
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 06:59:32,181
+Level: ERROR
+Message: Loader. Formations of elements.
+Error: Expecting property name enclosed in double quotes: line 4 column 3 (char 88)
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\create_bot.py", line 32, in <module>
+    fConfig = File(f"{BASE_DIR}{CONFIG_PATH}")
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\modules\file.py", line 10, in __init__
+    self.text = self.open_file()
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\modules\file.py", line 18, in open_file
+    text = json.loads(file_data.read())
+  File "C:\Users\linoliumer\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\linoliumer\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\linoliumer\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 4 column 3 (char 88)
+------------------------
+
+Time: 2023-03-23 07:01:02,034
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 07:03:59,427
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-23 07:03:59,466
+Level: INFO
+Message: Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x0000020DECED7D30>}, {'models': {'User': <class 'models.User'>}}
+
+------------------------
+
+Time: 2023-03-23 07:03:59,467
+Level: INFO
+Message: Tortoise-ORM generating schema
+
+------------------------
+
+Time: 2023-03-23 07:05:01,301
+Level: INFO
+Message: Tortoise-ORM shutdown
+

@@ -1,0 +1,25 @@
+{
+  "TELEGRAM": {
+    "BOT_TOKEN" : "5628797131:AAHjRTSKejHe-Fi2uIvNWn_Ssc6woD3HjS0"
+  },
+  "WEBHOOK": {
+    "HOST": "https://1749-178-70-167-189.eu.ngrok.io",
+    "PATH": "/bot/"
+  },
+  "WEBAPP": {
+    "HOST": "localhost",
+    "PORT": 8080
+  },
+  "PASSWORD": {
+    "ADMIN": "GOD",
+    "STAFF": "RAB"
+  },
+  "CASH": {
+    "SOURCES": ["SU1","SU2","SU3","SU4"],
+    "CATEGORY": ["CA1","CA2","CA3", "CA4"]
+  },
+  "CASHLESS": {
+    "SOURCES": ["SU1","SU2","SU3","SU4"],
+    "CATEGORY": ["CA1","CA2","CA3", "CA4"]
+  }
+}

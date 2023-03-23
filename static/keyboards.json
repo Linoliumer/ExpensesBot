@@ -1,0 +1,16 @@
+{
+  "MAIN": [
+    [
+      {"text": "Сессия", "type": "callback", "data": "main:session"}
+    ],
+    [
+      {"text": "Сессия", "type": "callback", "data": "main:session"}
+    ],
+    [
+      {"text": "Сессия", "type": "callback", "data": "main:session"}
+    ],
+    [
+      {"text": "Сессия", "type": "callback", "data": "main:session"}
+    ]
+  ]
+}
