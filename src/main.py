@@ -31,7 +31,7 @@ async def bot_webhook(update: dict):
 @app.on_event("shutdown")
 async def on_shutdown():
     session = await bot.get_session()
-    await session.close()
+    # await session.close()
 
 
 register_tortoise(
