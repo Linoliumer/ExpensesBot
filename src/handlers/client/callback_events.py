@@ -4,6 +4,8 @@ from aiogram.dispatcher.filters import ChatTypeFilter
 from handlers.client.menu import menu_owner, menu_staff, select_type, error_menu, settings_menu
 from aiogram.dispatcher.filters import Text
 
+from handlers.client.simple_input import set_spreadsheet
+
 
 @dp.callback_query_handler(
     ChatTypeFilter(types.ChatType.PRIVATE),
@@ -60,7 +62,7 @@ async def settings_process_callback(callback: types.CallbackQuery) -> None:
     # Retrieving a command from a callback
     command = str(callback.data).split(':')[1]
     if command == "set_spreadsheet":
-        pass
+        await set_spreadsheet()
     else:
         # Calling the error menu
         await error_menu(
