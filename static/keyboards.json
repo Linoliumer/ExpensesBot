@@ -1,16 +1,30 @@
 {
   "MAIN": [
     [
-      {"text": "Сессия", "type": "callback", "data": "main:session"}
+      {"text": "Сессия1", "type": "callback", "data": "main:session"}
     ],
     [
-      {"text": "Сессия", "type": "callback", "data": "main:session"}
+      {"text": "Сессия2", "type": "callback", "data": "main:session"}
     ],
     [
-      {"text": "Сессия", "type": "callback", "data": "main:session"}
+      {"text": "Сессия3", "type": "callback", "data": "main:session"}
     ],
     [
-      {"text": "Сессия", "type": "callback", "data": "main:session"}
+      {"text": "Сессия4", "type": "callback", "data": "main:session"}
+    ]
+  ],
+  "MAIN2": [
+    [
+      {"text": "Сессия5", "type": "callback", "data": "main:session"}
+    ],
+    [
+      {"text": "Сессия6", "type": "callback", "data": "main:session"}
+    ],
+    [
+      {"text": "Сессия7", "type": "callback", "data": "main:session"}
+    ],
+    [
+      {"text": "Сессия8", "type": "callback", "data": "main:session"}
     ]
   ]
 }

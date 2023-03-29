@@ -1,15 +1,30 @@
 import uvicorn
 from fastapi import FastAPI
 from create_bot import *
-from handlers import *
 from tortoise import Tortoise
 from tortoise.contrib.fastapi import register_tortoise
-
+from models import User
+from middlewares import Determination
+from handlers import *
 app = FastAPI()
+
+
+async def init():
+    # Here we connect to a SQLite DB file.
+    # also specify the app name of "models"
+    # which contain models from "app.models"
+    await Tortoise.init(
+        db_url=f"sqlite://{BASE_DIR}{DATABASE_PATH}",
+        modules={'models': ['models']}
+    )
+    # Generate the schema
+    await Tortoise.generate_schemas()
 
 
 @app.on_event("startup")
 async def on_startup():
+    dp.middleware.setup(Determination())
+    await init()
     webhook_info = await bot.get_webhook_info()
     if webhook_info.url != WEBHOOK_URL:
         await bot.set_webhook(
@@ -32,15 +47,7 @@ async def bot_webhook(update: dict):
 async def on_shutdown():
     session = await bot.get_session()
     await session.close()
-
-
-register_tortoise(
-    app,
-    db_url=f"sqlite://{BASE_DIR}/database/db.sqlite3",
-    modules={"models": ["models"]},
-    generate_schemas=True,
-    add_exception_handlers=True,
-)
+    await Tortoise.close_connections()
 
 
 if __name__ == "__main__":

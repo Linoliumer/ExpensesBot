@@ -3,7 +3,9 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from environs import Env
 from pathlib import Path
+import models
 from modules import *
+from states import *
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,6 +26,7 @@ env.read_env()
 CONFIG_PATH = env.str('CONFIG_PATH')
 CREDS_PATH = env.str('CREDS_PATH')
 CLIENT_TEXT_PATH = env.str('CLIENT_TEXT_PATH')
+KEYBOARD_PATH = env.str('KEYBOARD_PATH')
 DATABASE_PATH = env.str('DATABASE_PATH')
 
 """----------PARS FILES----------"""
@@ -55,3 +58,19 @@ storage = MemoryStorage()
 # Creating Dispatcher object
 dp = Dispatcher(bot, storage=storage)
 
+
+"""----------FORMATIONS OF ELEMENTS----------"""
+
+try:
+    # Opening a JSON file
+    keyboard_file = File(f"{BASE_DIR}{KEYBOARD_PATH}")
+    # Forming keyboards
+    keyboard = Keyboard_App(keyboard_file)
+    # Opening a JSON file
+    client_text_file = File(f"{BASE_DIR}{CLIENT_TEXT_PATH}")
+    # Forming client_text
+    client_text = Text_App(client_text_file)
+except Exception as e:
+    # Loader. Formations of elements.
+    logging.error(f"Loader. Formations of elements.\nError: {str(e)}", exc_info=True)
+    exit()

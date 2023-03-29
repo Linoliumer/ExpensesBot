@@ -1,10 +1,16 @@
 {
   "MENU": {
-    "HANDLER": {
-      "MAIN": "HANDLER_MAIN"
+    "TITLES": ["MAIN", "MAIN2"],
+    "HEADER": {
+      "MAIN": "HANDLER_MAIN",
+      "MAIN2": "HANDLER_MAIN2"
     },
-    "TEXT": {
-      "MAIN": "TEXT_MAIN"
+    "BODY": {
+      "MAIN": "TEXT_MAIN",
+      "MAIN2": "TEXT_MAIN2"
     }
+  },
+  "INPUT": {
+    "PASSWORD": "Введите пароль выданный владельцем: "
   }
 }
