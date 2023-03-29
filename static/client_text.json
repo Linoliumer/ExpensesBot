@@ -1,16 +1,31 @@
 {
   "MENU": {
-    "TITLES": ["MAIN", "MAIN2"],
+    "TITLES": ["MENU_OWNER", "MENU_STAFF", "SELECT_TYPE_ENTRY", "SETTINGS"],
     "HEADER": {
-      "MAIN": "HANDLER_MAIN",
-      "MAIN2": "HANDLER_MAIN2"
+      "MENU_OWNER": "Меню Владельца",
+      "MENU_STAFF": "Меню Сотрудника",
+      "SELECT_TYPE_ENTRY": "Тип записи",
+      "SETTINGS": "Настройки"
     },
     "BODY": {
-      "MAIN": "TEXT_MAIN",
-      "MAIN2": "TEXT_MAIN2"
+      "MENU_OWNER": "Сет: {}\nБезналичные: {}\nНаличные: {}",
+      "MENU_STAFF": "--+--+--+--+--+--+--+--+--",
+      "SELECT_TYPE_ENTRY": "Выбере тип записи:",
+      "SETTINGS": "--+--+--+--+--+--+--+--+--"
     }
   },
   "INPUT": {
     "PASSWORD": "Введите пароль выданный владельцем: "
+  },
+  "MESSAGE": {
+    "UNREGISTER": "Вы не авторизованный пользователь !",
+    "SUCCESS_AUTH": "Вы успешно авторизованы! Теперь вам доступна комманда /menu.",
+    "UNIDENTIFIED": "Запрос не опознан. Воспользуйтесь коммандой /menu."
+  },
+  "ERROR": {
+    "INVALID_COMMAND": "Неверная команда! Попробуйте ещё раз.",
+    "INVALID_PASSWORD": "Неверный пароль! Попробуйте ещё раз.",
+    "ERROR": "Что-то пошло не так. Пожалуйста, обратитесь к техническому испольнителю или попробуйте позже.",
+    "SPREADSHEET_NOT_SET" : "Похоже не установлена таблица. Установить таблицу вы можете в настройках."
   }
 }

@@ -3,9 +3,10 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from environs import Env
 from pathlib import Path
-import models
 from modules import *
 from states import *
+from models import SpreadsheetSet
+from tortoise.exceptions import DoesNotExist
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,7 +30,7 @@ CLIENT_TEXT_PATH = env.str('CLIENT_TEXT_PATH')
 KEYBOARD_PATH = env.str('KEYBOARD_PATH')
 DATABASE_PATH = env.str('DATABASE_PATH')
 
-"""----------PARS FILES----------"""
+"""----------PARS_FILES----------"""
 
 try:
     fConfig = File(f"{BASE_DIR}{CONFIG_PATH}")
@@ -49,7 +50,8 @@ WEBHOOK_URL = "{}{}".format(
 WEBAPP_HOST = fConfig.text['WEBAPP']['HOST']
 WEBAPP_PORT = fConfig.text['WEBAPP']['PORT']
 
-"""----------CREATING BOT----------"""
+
+"""----------CREATING_BOT----------"""
 
 # Creating Bot object
 bot = Bot(token=fConfig.text["TELEGRAM"]["BOT_TOKEN"], parse_mode=types.ParseMode.HTML)
@@ -59,7 +61,7 @@ storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
 
-"""----------FORMATIONS OF ELEMENTS----------"""
+"""----------FORMATIONS_OF_ELEMENTS----------"""
 
 try:
     # Opening a JSON file
@@ -74,3 +76,18 @@ except Exception as e:
     # Loader. Formations of elements.
     logging.error(f"Loader. Formations of elements.\nError: {str(e)}", exc_info=True)
     exit()
+
+
+"""----------SPREADSHEET_URL----------"""
+
+
+async def cash_url() -> str:
+    return fConfig.text["SPREADSHEET"]["URL"].format(
+        fConfig.text["SPREADSHEET"]["SPREADSHEET_ID"], fConfig.text["SPREADSHEET"]["CASH_ID"]
+    )
+
+
+async def cashless_url() -> str:
+    return fConfig.text["SPREADSHEET"]["URL"].format(
+        fConfig.text["SPREADSHEET"]["SPREADSHEET_ID"], fConfig.text["SPREADSHEET"]["CASHLESS_ID"]
+    )

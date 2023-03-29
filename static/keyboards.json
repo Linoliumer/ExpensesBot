@@ -1,30 +1,34 @@
 {
-  "MAIN": [
+  "MENU_OWNER": [
     [
-      {"text": "Сессия1", "type": "callback", "data": "main:session"}
+      {"text": "Добавить запись", "type": "callback", "data": "menu:add_entry"}
     ],
     [
-      {"text": "Сессия2", "type": "callback", "data": "main:session"}
-    ],
-    [
-      {"text": "Сессия3", "type": "callback", "data": "main:session"}
-    ],
-    [
-      {"text": "Сессия4", "type": "callback", "data": "main:session"}
+      {"text": "Настройки", "type": "callback", "data": "menu:settings"}
     ]
   ],
-  "MAIN2": [
+  "SELECT_TYPE_ENTRY": [
     [
-      {"text": "Сессия5", "type": "callback", "data": "main:session"}
+      {"text": "Безналичный", "type": "callback", "data": "add_entry:cashless"}
     ],
     [
-      {"text": "Сессия6", "type": "callback", "data": "main:session"}
+      {"text": "Наличный", "type": "callback", "data": "add_entry:cash"}
     ],
     [
-      {"text": "Сессия7", "type": "callback", "data": "main:session"}
+      {"text": "Назад", "type": "callback", "data": "menu"}
+    ]
+  ],
+  "IN_MENU": [
+    [
+      {"text": "В главное меню", "type": "callback", "data": "menu"}
+    ]
+  ],
+  "SETTINGS": [
+    [
+      {"text": "Установить таблицу", "type": "callback", "data": "settings:set_spreadsheet"}
     ],
     [
-      {"text": "Сессия8", "type": "callback", "data": "main:session"}
+      {"text": "Назад", "type": "callback", "data": "menu"}
     ]
   ]
 }

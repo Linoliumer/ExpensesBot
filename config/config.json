@@ -3,7 +3,7 @@
     "BOT_TOKEN" : "5628797131:AAHjRTSKejHe-Fi2uIvNWn_Ssc6woD3HjS0"
   },
   "WEBHOOK": {
-    "HOST": "https://e297-37-145-190-47.eu.ngrok.io",
+    "HOST": "https://1491-37-145-190-47.eu.ngrok.io",
     "PATH": "/bot/"
   },
   "WEBAPP": {
@@ -11,8 +11,15 @@
     "PORT": 8080
   },
   "PASSWORD": {
-    "ADMIN": "GOD",
+    "OWNER": "GOD",
     "STAFF": "RAB"
+  },
+  "SPREADSHEET": {
+    "URL": "https://docs.google.com/spreadsheets/d/{}/edit#gid={}",
+    "SPREADSHEET_ID": "",
+    "CASH_ID": 0,
+    "CASHLESS_ID": 0,
+    "SET_ID": 0
   },
   "CASH": {
     "SOURCES": ["SU1","SU2","SU3","SU4"],

@@ -2,14 +2,17 @@ import uvicorn
 from fastapi import FastAPI
 from create_bot import *
 from tortoise import Tortoise
-from tortoise.contrib.fastapi import register_tortoise
-from models import User
 from middlewares import Determination
 from handlers import *
+
+
 app = FastAPI()
 
 
-async def init():
+"""----------SPREADSHEET_SET----------"""
+
+
+async def init() -> None:
     # Here we connect to a SQLite DB file.
     # also specify the app name of "models"
     # which contain models from "app.models"
@@ -21,10 +24,29 @@ async def init():
     await Tortoise.generate_schemas()
 
 
+async def spreadsheet_set_detect() -> None:
+    try:
+        spreadsheet_set = await SpreadsheetSet.get(active=True)
+    except DoesNotExist:
+        fConfig.text["SPREADSHEET"]["SPREADSHEET_ID"] = "None"
+        fConfig.text["SPREADSHEET"]["CASH_ID"] = 0
+        fConfig.text["SPREADSHEET"]["CASHLESS_ID"] = 0
+        fConfig.text["SPREADSHEET"]["SET_ID"] = 0
+    except Exception as e:
+        logging.error(f"Database error.\nError: {str(e)}", exc_info=True)
+        await on_shutdown()
+    else:
+        fConfig.text["SPREADSHEET"]["SPREADSHEET_ID"] = spreadsheet_set.spreadsheet_id
+        fConfig.text["SPREADSHEET"]["CASH_ID"] = spreadsheet_set.cash_id
+        fConfig.text["SPREADSHEET"]["CASHLESS_ID"] = spreadsheet_set.cashless_id
+        fConfig.text["SPREADSHEET"]["SET_ID"] = spreadsheet_set.id
+
+
 @app.on_event("startup")
 async def on_startup():
-    dp.middleware.setup(Determination())
     await init()
+    await spreadsheet_set_detect()
+    dp.middleware.setup(Determination())
     webhook_info = await bot.get_webhook_info()
     if webhook_info.url != WEBHOOK_URL:
         await bot.set_webhook(

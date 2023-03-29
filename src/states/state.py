@@ -8,7 +8,7 @@ class UserCondition(StatesGroup):
 
 
 class Input(StatesGroup):
-    Password = State()
+    Spreadsheet_id = State()
 
 
 
