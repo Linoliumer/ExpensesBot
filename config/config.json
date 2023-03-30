@@ -1,9 +1,9 @@
 {
   "TELEGRAM": {
-    "BOT_TOKEN" : "5628797131:AAHjRTSKejHe-Fi2uIvNWn_Ssc6woD3HjS0"
+    "BOT_TOKEN" : ""
   },
   "WEBHOOK": {
-    "HOST": "https://6e24-178-70-167-189.eu.ngrok.io",
+    "HOST": "",
     "PATH": "/bot/"
   },
   "WEBAPP": {

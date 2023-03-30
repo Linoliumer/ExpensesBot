@@ -56,7 +56,7 @@ WEBAPP_HOST = fConfig.text['WEBAPP']['HOST']
 WEBAPP_PORT = fConfig.text['WEBAPP']['PORT']
 
 SPREADSHEET_CHAT_LEN = 100
-INPUT_TIME_AFK = 5
+INPUT_TIME_AFK = 20
 
 """----------CREATING_BOT----------"""
 
