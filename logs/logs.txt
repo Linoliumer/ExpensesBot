@@ -1,240 +1,358 @@
 ------------------------
 
-Time: 2023-03-30 08:05:36,040
+Time: 2023-03-30 12:46:07,372
+Level: ERROR
+Message: Loader. Formations of elements.
+Error: list index out of range
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\create_bot.py", line 74, in <module>
+    keyboard = Keyboard_App(keyboard_file, fConfig)
+  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 14, in __init__
+    self.formed_selection_keyboards(obj_cfg.text)
+  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 45, in formed_selection_keyboards
+    text=text["CASH"][element][i], callback_data=f"cash:{i}"
+IndexError: list index out of range
+------------------------
+
+Time: 2023-03-30 12:46:42,520
+Level: ERROR
+Message: Loader. Formations of elements.
+Error: list index out of range
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\create_bot.py", line 74, in <module>
+    keyboard = Keyboard_App(keyboard_file, fConfig)
+  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 14, in __init__
+    self.formed_selection_keyboards(obj_cfg.text)
+  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 46, in formed_selection_keyboards
+    text=text["CASH"][element][i], callback_data=f"cash:{i}"
+IndexError: list index out of range
+------------------------
+
+Time: 2023-03-30 12:47:30,907
+Level: ERROR
+Message: Loader. Formations of elements.
+Error: list index out of range
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\create_bot.py", line 74, in <module>
+    keyboard = Keyboard_App(keyboard_file, fConfig)
+  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 14, in __init__
+    self.formed_selection_keyboards(obj_cfg.text)
+  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 49, in formed_selection_keyboards
+    text=text["CASH"][element][i+1], callback_data=f"cash:{i}"
+IndexError: list index out of range
+------------------------
+
+Time: 2023-03-30 12:48:40,434
+Level: ERROR
+Message: Loader. Formations of elements.
+Error: list index out of range
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\create_bot.py", line 74, in <module>
+    keyboard = Keyboard_App(keyboard_file, fConfig)
+  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 14, in __init__
+    self.formed_selection_keyboards(obj_cfg.text)
+  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 49, in formed_selection_keyboards
+    text=text["CASH"][element][i+1], callback_data=f"cash:{i}"
+IndexError: list index out of range
+------------------------
+
+Time: 2023-03-30 12:55:58,775
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 08:05:39,540
+Time: 2023-03-30 12:57:03,682
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 08:08:07,123
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 08:08:09,967
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 08:13:08,037
+Time: 2023-03-30 12:57:23,083
 Level: INFO
 Message: WEBHOOK SET
 
 ------------------------
 
-Time: 2023-03-30 08:13:08,040
+Time: 2023-03-30 12:57:23,084
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 08:13:47,035
-Level: INFO
-Message: Attempting refresh to obtain initial access_token
-
-------------------------
-
-Time: 2023-03-30 08:13:47,334
-Level: INFO
-Message: Refreshing access_token
-
-------------------------
-
-Time: 2023-03-30 08:23:05,224
+Time: 2023-03-30 12:59:58,769
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 08:23:10,100
+Time: 2023-03-30 13:00:02,581
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 08:23:39,609
-Level: INFO
-Message: Attempting refresh to obtain initial access_token
-
+Time: 2023-03-30 13:00:17,628
+Level: ERROR
+Message: Validation.
+Error: could not convert string to float: 'Ijj'
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 45, in set_amount
+    amount = float(message.text)
+ValueError: could not convert string to float: 'Ijj'
 ------------------------
 
-Time: 2023-03-30 08:23:39,894
-Level: INFO
-Message: Refreshing access_token
-
+Time: 2023-03-30 13:00:21,519
+Level: ERROR
+Message: Validation.
+Error: 
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 48, in set_amount
+    raise Exception
+Exception
 ------------------------
 
-Time: 2023-03-30 08:24:31,840
+Time: 2023-03-30 13:01:27,849
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 08:37:46,382
+Time: 2023-03-30 13:01:31,539
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 08:38:19,738
-Level: INFO
-Message: Attempting refresh to obtain initial access_token
-
-------------------------
-
-Time: 2023-03-30 08:38:19,997
-Level: INFO
-Message: Refreshing access_token
-
-------------------------
-
-Time: 2023-03-30 08:40:27,170
+Time: 2023-03-30 13:01:51,328
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 08:40:31,716
+Time: 2023-03-30 13:02:25,700
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 08:40:56,291
-Level: INFO
-Message: Attempting refresh to obtain initial access_token
-
+Time: 2023-03-30 13:03:15,094
+Level: ERROR
+Message: Validation.
+Error: could not convert string to float: 'U'
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 45, in set_amount
+    amount = float(message.text)
+ValueError: could not convert string to float: 'U'
 ------------------------
 
-Time: 2023-03-30 08:40:56,541
-Level: INFO
-Message: Refreshing access_token
-
-------------------------
-
-Time: 2023-03-30 08:41:45,647
+Time: 2023-03-30 13:03:37,663
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 08:41:50,189
+Time: 2023-03-30 13:05:09,737
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 08:42:09,393
-Level: INFO
-Message: Attempting refresh to obtain initial access_token
-
-------------------------
-
-Time: 2023-03-30 08:42:09,641
-Level: INFO
-Message: Refreshing access_token
-
-------------------------
-
-Time: 2023-03-30 08:42:45,089
+Time: 2023-03-30 13:05:22,685
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 08:42:48,797
+Time: 2023-03-30 13:05:30,464
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 08:43:06,091
-Level: INFO
-Message: Attempting refresh to obtain initial access_token
-
+Time: 2023-03-30 13:05:43,470
+Level: ERROR
+Message: Validation.
+Error: could not convert string to float: '/state'
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 45, in set_amount
+    amount = float(message.text)
+ValueError: could not convert string to float: '/state'
 ------------------------
 
-Time: 2023-03-30 08:43:06,211
-Level: INFO
-Message: Refreshing access_token
-
-------------------------
-
-Time: 2023-03-30 08:44:17,520
+Time: 2023-03-30 13:06:19,353
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 08:44:21,101
+Time: 2023-03-30 13:06:23,334
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 08:44:38,389
-Level: INFO
-Message: Attempting refresh to obtain initial access_token
-
+Time: 2023-03-30 13:06:51,369
+Level: ERROR
+Message: Validation.
+Error: could not convert string to float: '/cancel'
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 45, in set_amount
+    amount = float(message.text)
+ValueError: could not convert string to float: '/cancel'
 ------------------------
 
-Time: 2023-03-30 08:44:38,513
-Level: INFO
-Message: Refreshing access_token
-
-------------------------
-
-Time: 2023-03-30 08:45:08,239
+Time: 2023-03-30 13:07:09,992
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 08:45:11,799
+Time: 2023-03-30 13:07:13,792
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 08:45:28,743
-Level: INFO
-Message: Attempting refresh to obtain initial access_token
-
+Time: 2023-03-30 13:07:44,718
+Level: ERROR
+Message: Validation.
+Error: could not convert string to float: '/stat3'
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 45, in set_amount
+    amount = float(message.text)
+ValueError: could not convert string to float: '/stat3'
 ------------------------
 
-Time: 2023-03-30 08:45:28,842
-Level: INFO
-Message: Refreshing access_token
-
-------------------------
-
-Time: 2023-03-30 10:04:24,065
+Time: 2023-03-30 13:09:46,898
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 10:05:20,777
+Time: 2023-03-30 13:09:50,752
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 10:05:54,862
+Time: 2023-03-30 13:10:35,929
+Level: ERROR
+Message: Validation.
+Error: could not convert string to float: '/stste'
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 45, in set_amount
+    amount = float(message.text)
+ValueError: could not convert string to float: '/stste'
+------------------------
+
+Time: 2023-03-30 13:17:11,627
 Level: INFO
-Message: Attempting refresh to obtain initial access_token
+Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 10:05:54,959
+Time: 2023-03-30 13:17:15,452
 Level: INFO
-Message: Refreshing access_token
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 13:17:54,858
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 13:22:32,706
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 13:23:03,818
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 13:23:07,425
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 13:43:23,823
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 14:00:30,798
+Level: ERROR
+Message: Loader. Formations of elements.
+Error: Expecting property name enclosed in double quotes: line 9 column 5 (char 260)
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\create_bot.py", line 76, in <module>
+    client_text_file = File(f"{BASE_DIR}{CLIENT_TEXT_PATH}")
+  File "C:\UnderDojoExpensesNEW\src\modules\file.py", line 10, in __init__
+    self.text = self.open_file()
+  File "C:\UnderDojoExpensesNEW\src\modules\file.py", line 18, in open_file
+    text = json.loads(file_data.read())
+  File "C:\Users\juliy\AppData\Local\Programs\Python\Python38-32\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\juliy\AppData\Local\Programs\Python\Python38-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\juliy\AppData\Local\Programs\Python\Python38-32\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 9 column 5 (char 260)
+------------------------
+
+Time: 2023-03-30 14:14:27,662
+Level: ERROR
+Message: Loader. Formations of elements.
+Error: Expecting property name enclosed in double quotes: line 9 column 5 (char 260)
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\create_bot.py", line 76, in <module>
+    client_text_file = File(f"{BASE_DIR}{CLIENT_TEXT_PATH}")
+  File "C:\UnderDojoExpensesNEW\src\modules\file.py", line 10, in __init__
+    self.text = self.open_file()
+  File "C:\UnderDojoExpensesNEW\src\modules\file.py", line 18, in open_file
+    text = json.loads(file_data.read())
+  File "C:\Users\juliy\AppData\Local\Programs\Python\Python38-32\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\juliy\AppData\Local\Programs\Python\Python38-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\juliy\AppData\Local\Programs\Python\Python38-32\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 9 column 5 (char 260)
+------------------------
+
+Time: 2023-03-30 14:14:58,869
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 14:15:57,748
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 14:16:00,533
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 14:16:41,501
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 14:16:44,282
+Level: INFO
+Message: WEBHOOK DETECTED
 

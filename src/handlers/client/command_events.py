@@ -3,6 +3,23 @@ from create_bot import *
 from aiogram.dispatcher.filters import ChatTypeFilter
 from models import User
 from handlers.client.menu import menu_owner, menu_staff
+from states.state import Cash, Cashless
+
+
+@dp.message_handler(
+    ChatTypeFilter(types.ChatType.PRIVATE),
+    commands=["cancel"],
+    state=[Input.Spreadsheet_id, Cash, Cashless]
+)
+async def cancel(message: types.Message, state: FSMContext, user: User) -> None:
+    try:
+        await state.finish()
+    except Exception as e:
+        logging.error(f"State.\nError: {str(e)}", exc_info=True)
+    if user.role == 1:
+        await menu_owner(message=message)
+    elif user.role == 0:
+        await menu_staff(message=message)
 
 
 @dp.message_handler(

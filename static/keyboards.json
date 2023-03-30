@@ -7,6 +7,11 @@
       {"text": "Настройки", "type": "callback", "data": "menu:settings"}
     ]
   ],
+  "MENU_STAFF": [
+    [
+      {"text": "Добавить запись", "type": "callback", "data": "add_entry:cash"}
+    ]
+  ],
   "SELECT_TYPE_ENTRY": [
     [
       {"text": "Безналичный", "type": "callback", "data": "add_entry:cashless"}
@@ -29,6 +34,25 @@
     ],
     [
       {"text": "Назад", "type": "callback", "data": "menu"}
+    ]
+  ],
+  "SELECT_DATE": [
+    [
+      {"text": "Сегодня", "type": "callback", "data": "entry_date:today"}
+    ],
+    [
+      {"text": "Вчера", "type": "callback", "data": "entry_date:yesterday"}
+    ],
+    [
+      {"text": "Выбрать дату", "type": "callback", "data": "calendar"}
+    ]
+  ],
+  "ADD_ENTRY": [
+    [
+      {"text": "Внесть в таблицу", "type": "callback", "data": "add_entry:accept"}
+    ],
+    [
+      {"text": "Отмена", "type": "callback", "data": "add_entry:cancel"}
     ]
   ]
 }

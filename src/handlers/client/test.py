@@ -1,3 +1,5 @@
+from aiogram.dispatcher import FSMContext
+
 from create_bot import *
 from aiogram.dispatcher.filters import ChatTypeFilter
 
@@ -11,3 +13,10 @@ CASH_ID={fConfig.text['SPREADSHEET']['CASH_ID']}
 CASHLESS_ID={fConfig.text['SPREADSHEET']['CASHLESS_ID']}"""
     )
 
+
+@dp.message_handler(ChatTypeFilter(types.ChatType.PRIVATE), commands=["state"], state="*")
+async def test_state(message: types.Message, state: FSMContext) -> None:
+    data = await state.get_data()
+    await message.answer(
+        text=str(data)
+    )

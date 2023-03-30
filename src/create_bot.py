@@ -71,7 +71,7 @@ try:
     # Opening a JSON file
     keyboard_file = File(f"{BASE_DIR}{KEYBOARD_PATH}")
     # Forming keyboards
-    keyboard = Keyboard_App(keyboard_file)
+    keyboard = Keyboard_App(keyboard_file, fConfig)
     # Opening a JSON file
     client_text_file = File(f"{BASE_DIR}{CLIENT_TEXT_PATH}")
     # Forming client_text

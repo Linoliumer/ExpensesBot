@@ -8,7 +8,12 @@ from models import *
 from states import *
 
 
-unusual_states = ["Input:Spreadsheet_id"]
+unusual_states = ["Input:Spreadsheet_id",
+                  "Cashless:Date", "Cashless:Calendar", "Cashless:Amount", "Cashless:SourcePayment",
+                  "Cashless:Category", "Cashless:Commentary", "Cashless:Accept", "Cashless:Finish",
+                  "Cash:Date", "Cash:Calendar", "Cash:Amount", "Cash:Category",
+                  "Cash:Commentary", "Cash:Accept", "Cash:Finish"]
+
 
 class Determination(BaseMiddleware):
 
@@ -59,5 +64,6 @@ class Determination(BaseMiddleware):
             data["user"] = user
         """
         state_now = await state.get_state()
-        logging.info(f"{message.from_user.id} -- {state_now}")
+        logging.info(f"{callback.from_user.id} -- {state_now}")
         """
+

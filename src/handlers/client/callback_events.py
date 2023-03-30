@@ -5,6 +5,7 @@ from handlers.client.menu import menu_owner, menu_staff, select_type, error_menu
 from aiogram.dispatcher.filters import Text
 
 from handlers.client.spreadsheet_id import input_spreadsheetId
+from models import User
 
 
 @dp.callback_query_handler(
@@ -72,4 +73,3 @@ async def settings_process_callback(callback: types.CallbackQuery, state: FSMCon
             keyboard=keyboard.keyboards["SETTINGS"],
             callback=callback
         )
-
