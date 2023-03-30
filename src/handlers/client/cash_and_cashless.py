@@ -5,6 +5,7 @@ from aiogram.dispatcher.filters import ChatTypeFilter
 
 from handlers.client.menu import menu_owner, menu_staff
 from models import User
+from spreadsheet import add_entry
 from states.state import Cashless, Cash
 
 
@@ -161,16 +162,21 @@ async def set_commentary(message: types.Message, state: FSMContext):
     Text(startswith="add_entry:"),
     state=[Cash.Accept, Cashless.Accept]
 )
-async def add_entry(callback: types.CallbackQuery, state: FSMContext, user: User) -> None:
+async def add_entry_accept(callback: types.CallbackQuery, state: FSMContext, user: User) -> None:
     # Get data
     await callback.answer()
     data = await state.get_data()
     result = str(callback.data).split(':')[1]
     if result == "accept":
-        # SOME FUNC CREATE ENTRY
-        await callback.message.answer(
-            text=client_text.messages["ADD_ENTRY_ACCEPT"]
-        )
+        ok = await add_entry(service, fConfig.text, data)
+        if ok:
+            await callback.message.answer(
+                text=client_text.messages["ADD_ENTRY_ACCEPT"]
+            )
+        else:
+            await callback.message.answer(
+                text=client_text.errors["ERROR"]
+            )
     else:
         await callback.message.answer(
             text=client_text.messages["ADD_ENTRY_CANCEL"]

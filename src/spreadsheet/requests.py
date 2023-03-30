@@ -262,3 +262,56 @@ async def add_sheets(service, data):
     }).execute()
     return data
 
+
+async def add_entry_to_sheet(service, config, data):
+    title = f"{config['SPREADSHEET']['SET_ID']} {data['type']}"
+    pointer = int(
+        service.
+        spreadsheets().
+        values().
+        get(spreadsheetId=config["SPREADSHEET"]["SPREADSHEET_ID"], range=f"{title}!G2").execute()['values'][0][0]
+    ) - 1
+    # Query with entry
+    service.spreadsheets().batchUpdate(
+        spreadsheetId=config["SPREADSHEET"]["SPREADSHEET_ID"],
+        body=
+        {
+            "requests": [
+                {
+                    "updateBorders": {
+                        "range": {"sheetId": config["SPREADSHEET"][f"{data['type']}_ID"],
+                                  "startRowIndex": pointer,
+                                  "endRowIndex": pointer + 1,
+                                  "startColumnIndex": 0,
+                                  "endColumnIndex": 6
+                                  },
+                        "innerVertical": {
+                            "style": "SOLID",
+                            "width": 1,
+                            "color": {"red": 0, "green": 0, "blue": 0, "alpha": 1}
+                        },
+                        "right": {
+                            "style": "SOLID",
+                            "width": 1,
+                            "color": {"red": 0, "green": 0, "blue": 0, "alpha": 1}
+                        }
+                    }
+                }
+            ]
+        }
+    ).execute()
+    if data["type"] == "CASHLESS":
+        sources = data["sourcepayment"]
+    else:
+        sources = "Наличные"
+    service.spreadsheets().values().batchUpdate(spreadsheetId=config["SPREADSHEET"]["SPREADSHEET_ID"], body={
+        "valueInputOption": "USER_ENTERED",
+        "data": [
+            {"range": f"{title}!A{pointer + 1}:F{pointer + 1}",
+             "majorDimension": "ROWS",
+             "values": [
+                 [data["date"], data["amount"], sources,
+                  data["category"], data["comment"], data["username"]]
+             ]}
+        ]
+    }).execute()

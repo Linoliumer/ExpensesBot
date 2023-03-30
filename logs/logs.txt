@@ -356,3 +356,179 @@ Time: 2023-03-30 14:16:44,282
 Level: INFO
 Message: WEBHOOK DETECTED
 
+------------------------
+
+Time: 2023-03-30 14:49:04,700
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 14:49:08,248
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 14:49:08,480
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 14:49:24,104
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 14:52:33,404
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-30 14:52:33,502
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-30 14:53:02,579
+Level: ERROR
+Message: Add entry.
+Error: 'CASHLESS_ID'
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 65, in add_entry
+    await add_entry_to_sheet(service, config, data)
+  File "C:\UnderDojoExpensesNEW\src\spreadsheet\requests.py", line 282, in add_entry_to_sheet
+    "range": {"sheetId": config[f"{data['type']}_ID"],
+KeyError: 'CASHLESS_ID'
+------------------------
+
+Time: 2023-03-30 14:54:14,031
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 14:54:17,167
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 14:54:37,168
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-30 14:54:37,267
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-30 14:55:44,713
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 14:55:53,115
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 14:56:34,613
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-30 14:56:34,694
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-30 14:56:35,161
+Level: ERROR
+Message: Add entry.
+Error: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/None/values/0%20CASH%21G2?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 65, in add_entry
+    await add_entry_to_sheet(service, config, data)
+  File "C:\UnderDojoExpensesNEW\src\spreadsheet\requests.py", line 269, in add_entry_to_sheet
+    service.
+  File "C:\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/None/values/0%20CASH%21G2?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+------------------------
+
+Time: 2023-03-30 14:56:46,515
+Level: ERROR
+Message: Add entry.
+Error: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/None/values/0%20CASH%21G2?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+Traceback (most recent call last):
+  File "C:\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 65, in add_entry
+    await add_entry_to_sheet(service, config, data)
+  File "C:\UnderDojoExpensesNEW\src\spreadsheet\requests.py", line 269, in add_entry_to_sheet
+    service.
+  File "C:\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/None/values/0%20CASH%21G2?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+------------------------
+
+Time: 2023-03-30 14:57:35,784
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 14:57:47,438
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 15:53:06,375
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 15:53:18,996
+Level: INFO
+Message: WEBHOOK SET
+
+------------------------
+
+Time: 2023-03-30 15:53:18,996
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 15:55:30,953
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-30 15:55:31,048
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-30 16:10:31,080
+Level: INFO
+Message: Tortoise-ORM shutdown
+
