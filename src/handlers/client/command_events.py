@@ -54,3 +54,4 @@ async def sing_up(message: types.Message):
         await message.answer(
             text=client_text.errors["INVALID_COMMAND"]
         )
+

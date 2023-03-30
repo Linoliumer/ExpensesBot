@@ -4,7 +4,7 @@ from aiogram.dispatcher.filters import ChatTypeFilter
 from handlers.client.menu import menu_owner, menu_staff, select_type, error_menu, settings_menu
 from aiogram.dispatcher.filters import Text
 
-from handlers.client.simple_input import set_spreadsheet
+from handlers.client.spreadsheet_id import input_spreadsheetId
 
 
 @dp.callback_query_handler(
@@ -39,6 +39,7 @@ async def menu_process_callback(callback: types.CallbackQuery) -> None:
             # Calling the error menu
             await error_menu(
                 text=client_text.errors["SPREADSHEET_NOT_SET"],
+                keyboard=keyboard.keyboards["IN_MENU"],
                 callback=callback
             )
     elif command == "settings":
@@ -47,6 +48,7 @@ async def menu_process_callback(callback: types.CallbackQuery) -> None:
         # Calling the error menu
         await error_menu(
             text=client_text.errors["ERROR"],
+            keyboard=keyboard.keyboards["IN_MENU"],
             callback=callback
         )
 
@@ -56,16 +58,18 @@ async def menu_process_callback(callback: types.CallbackQuery) -> None:
     Text(startswith="settings:"),
     state=UserCondition.Owner
 )
-async def settings_process_callback(callback: types.CallbackQuery) -> None:
+async def settings_process_callback(callback: types.CallbackQuery, state: FSMContext) -> None:
     # Response to the Telegram server
     await callback.answer()
     # Retrieving a command from a callback
     command = str(callback.data).split(':')[1]
     if command == "set_spreadsheet":
-        await set_spreadsheet()
+        await input_spreadsheetId(callback=callback, state=state)
     else:
         # Calling the error menu
         await error_menu(
             text=client_text.errors["ERROR"],
+            keyboard=keyboard.keyboards["SETTINGS"],
             callback=callback
         )
+

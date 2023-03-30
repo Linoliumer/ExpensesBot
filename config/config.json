@@ -3,7 +3,7 @@
     "BOT_TOKEN" : "5628797131:AAHjRTSKejHe-Fi2uIvNWn_Ssc6woD3HjS0"
   },
   "WEBHOOK": {
-    "HOST": "https://1491-37-145-190-47.eu.ngrok.io",
+    "HOST": "https://b11b-37-145-190-47.eu.ngrok.io",
     "PATH": "/bot/"
   },
   "WEBAPP": {

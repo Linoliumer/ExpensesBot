@@ -10,3 +10,4 @@ SPREADSHEET_ID={fConfig.text['SPREADSHEET']['SPREADSHEET_ID']}
 CASH_ID={fConfig.text['SPREADSHEET']['CASH_ID']}
 CASHLESS_ID={fConfig.text['SPREADSHEET']['CASHLESS_ID']}"""
     )
+

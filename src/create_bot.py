@@ -1,4 +1,6 @@
 import logging
+
+import apiclient
 from aiogram import Bot, Dispatcher, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from environs import Env
@@ -7,7 +9,8 @@ from modules import *
 from states import *
 from models import SpreadsheetSet
 from tortoise.exceptions import DoesNotExist
-
+from oauth2client.service_account import ServiceAccountCredentials
+import httplib2
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -50,6 +53,7 @@ WEBHOOK_URL = "{}{}".format(
 WEBAPP_HOST = fConfig.text['WEBAPP']['HOST']
 WEBAPP_PORT = fConfig.text['WEBAPP']['PORT']
 
+SPREADSHEET_CHAT_LEN = 100
 
 """----------CREATING_BOT----------"""
 
@@ -77,6 +81,16 @@ except Exception as e:
     logging.error(f"Loader. Formations of elements.\nError: {str(e)}", exc_info=True)
     exit()
 
+
+"""----------GOOGLE_SERVICES----------"""
+
+credentials = ServiceAccountCredentials.from_json_keyfile_name(
+        f"{BASE_DIR}{CREDS_PATH}",                                       # Auth data
+        ['https://www.googleapis.com/auth/spreadsheets',        # Google Sheets
+         'https://www.googleapis.com/auth/drive']               # Google Drive
+    )
+httpAuth = credentials.authorize(httplib2.Http())
+service = apiclient.discovery.build('sheets', 'v4', http=httpAuth, cache_discovery=False)
 
 """----------SPREADSHEET_URL----------"""
 

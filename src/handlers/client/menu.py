@@ -3,6 +3,7 @@ from create_bot import *
 
 async def error_menu(
         text: str,
+        keyboard: types.InlineKeyboardMarkup,
         callback: types.CallbackQuery = None,
         message: types.Message = None,
 ) -> None:
@@ -15,7 +16,7 @@ async def error_menu(
 
     await obj_for_answer.answer(
         text=text,
-        reply_markup=keyboard.keyboards["IN_MENU"]
+        reply_markup=keyboard
     )
 
 

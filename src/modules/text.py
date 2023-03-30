@@ -8,7 +8,6 @@ class Text_App:
 
     errors = {}
 
-
     def __init__(self, obj: File):
         self.formed_menus_text(obj.text)
         self.formed_input_text(obj.text)
