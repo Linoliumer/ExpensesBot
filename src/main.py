@@ -44,6 +44,7 @@ async def spreadsheet_set_detect() -> None:
 
 @app.on_event("startup")
 async def on_startup():
+    scheduler.start()
     await init()
     await spreadsheet_set_detect()
     dp.middleware.setup(Determination())

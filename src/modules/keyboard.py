@@ -41,7 +41,6 @@ class Keyboard_App:
             temp = len_elements - overflow
             name = element.lower()
             for i in range(0, temp, 2):
-                print(i)
                 line = [
                     types.InlineKeyboardButton(
                         text=text["CASH"][element][i], callback_data=f"{name}:{i}"

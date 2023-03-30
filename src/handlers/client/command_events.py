@@ -13,9 +13,13 @@ from states.state import Cash, Cashless
 )
 async def cancel(message: types.Message, state: FSMContext, user: User) -> None:
     try:
+        scheduler.remove_job(job_id=f"{message.from_user.id}")
+    except Exception as e:
+        logging.info(f"Scheduler.\nError: {str(e)}", exc_info=True)
+    try:
         await state.finish()
     except Exception as e:
-        logging.error(f"State.\nError: {str(e)}", exc_info=True)
+        logging.info(f"State.\nError: {str(e)}", exc_info=True)
     if user.role == 1:
         await menu_owner(message=message)
     elif user.role == 0:

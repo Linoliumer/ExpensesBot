@@ -1,534 +1,1938 @@
 ------------------------
 
-Time: 2023-03-30 12:46:07,372
-Level: ERROR
-Message: Loader. Formations of elements.
-Error: list index out of range
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\create_bot.py", line 74, in <module>
-    keyboard = Keyboard_App(keyboard_file, fConfig)
-  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 14, in __init__
-    self.formed_selection_keyboards(obj_cfg.text)
-  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 45, in formed_selection_keyboards
-    text=text["CASH"][element][i], callback_data=f"cash:{i}"
-IndexError: list index out of range
-------------------------
-
-Time: 2023-03-30 12:46:42,520
-Level: ERROR
-Message: Loader. Formations of elements.
-Error: list index out of range
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\create_bot.py", line 74, in <module>
-    keyboard = Keyboard_App(keyboard_file, fConfig)
-  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 14, in __init__
-    self.formed_selection_keyboards(obj_cfg.text)
-  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 46, in formed_selection_keyboards
-    text=text["CASH"][element][i], callback_data=f"cash:{i}"
-IndexError: list index out of range
-------------------------
-
-Time: 2023-03-30 12:47:30,907
-Level: ERROR
-Message: Loader. Formations of elements.
-Error: list index out of range
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\create_bot.py", line 74, in <module>
-    keyboard = Keyboard_App(keyboard_file, fConfig)
-  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 14, in __init__
-    self.formed_selection_keyboards(obj_cfg.text)
-  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 49, in formed_selection_keyboards
-    text=text["CASH"][element][i+1], callback_data=f"cash:{i}"
-IndexError: list index out of range
-------------------------
-
-Time: 2023-03-30 12:48:40,434
-Level: ERROR
-Message: Loader. Formations of elements.
-Error: list index out of range
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\create_bot.py", line 74, in <module>
-    keyboard = Keyboard_App(keyboard_file, fConfig)
-  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 14, in __init__
-    self.formed_selection_keyboards(obj_cfg.text)
-  File "C:\UnderDojoExpensesNEW\src\modules\keyboard.py", line 49, in formed_selection_keyboards
-    text=text["CASH"][element][i+1], callback_data=f"cash:{i}"
-IndexError: list index out of range
-------------------------
-
-Time: 2023-03-30 12:55:58,775
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 12:57:03,682
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 12:57:23,083
+Time: 2023-03-30 22:53:29,051
 Level: INFO
 Message: WEBHOOK SET
 
 ------------------------
 
-Time: 2023-03-30 12:57:23,084
+Time: 2023-03-30 22:53:29,051
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 12:59:58,769
+Time: 2023-03-30 22:54:27,220
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-30 22:54:27,244
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-30 22:54:41,242
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 13:00:02,581
+Time: 2023-03-30 22:58:55,419
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 13:00:17,628
-Level: ERROR
-Message: Validation.
-Error: could not convert string to float: 'Ijj'
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 45, in set_amount
-    amount = float(message.text)
-ValueError: could not convert string to float: 'Ijj'
+Time: 2023-03-30 22:59:26,138
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
 ------------------------
 
-Time: 2023-03-30 13:00:21,519
+Time: 2023-03-30 22:59:26,162
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-30 23:14:54,733
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 23:14:56,823
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 23:15:17,597
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-30 23:15:17,619
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-30 23:18:02,428
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 23:18:04,499
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 23:18:18,765
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-30 23:18:18,788
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-30 23:19:31,728
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 23:19:34,039
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 23:19:45,992
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-30 23:19:46,015
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-30 23:19:46,689
+Level: ERROR
+Message: Database error.
+Error: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/Jopa:batchUpdate?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 41, in activate_spreadsheet
+    spreadsheet = await SpreadsheetSet.get(spreadsheet_id=spreadsheet_id)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 1020, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 44, in activate_spreadsheet
+    spreadsheet = await create_spreadsheet(spreadsheet_id=spreadsheet_id, set_id=1)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 30, in create_spreadsheet
+    temp_data = await add_sheets(service, data)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\spreadsheet\requests.py", line 6, in add_sheets
+    result = service.spreadsheets().batchUpdate(
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/Jopa:batchUpdate?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+------------------------
+
+Time: 2023-03-30 23:20:19,874
+Level: ERROR
+Message: Validation.
+Error: could not convert string to float: 'Kh'
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 49, in set_amount
+    amount = float(message.text)
+ValueError: could not convert string to float: 'Kh'
+------------------------
+
+Time: 2023-03-30 23:20:22,403
 Level: ERROR
 Message: Validation.
 Error: 
 Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 48, in set_amount
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 52, in set_amount
     raise Exception
 Exception
 ------------------------
 
-Time: 2023-03-30 13:01:27,849
+Time: 2023-03-30 23:20:54,562
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 13:01:31,539
+Time: 2023-03-30 23:40:22,499
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-30 23:40:22,713
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 13:01:51,328
+Time: 2023-03-30 23:40:28,035
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 13:02:25,700
+Time: 2023-03-30 23:52:15,471
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-30 23:52:15,701
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 13:03:15,094
+Time: 2023-03-30 23:52:32,374
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-30 23:52:32,374
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-30 23:52:52,324
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-30 23:52:52,325
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-30 23:52:52 MSK], next run at: 2023-03-30 23:52:52 MSK)" (scheduled at 2023-03-30 23:52:52.321179+03:00)
+
+------------------------
+
+Time: 2023-03-30 23:52:52,542
+Level: ERROR
+Message: Job "afk (trigger: date[2023-03-30 23:52:52 MSK], next run at: 2023-03-30 23:52:52 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\afk.py", line 16, in afk
+    await obj_for_answer.answer(
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\aiogram\types\callback_query.py", line 57, in answer
+    return await self.bot.answer_callback_query(callback_query_id=self.id,
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\aiogram\bot\bot.py", line 2890, in answer_callback_query
+    return await self.request(api.Methods.ANSWER_CALLBACK_QUERY, payload)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.InvalidQueryID: Query is too old and response timeout expired or query id is invalid
+------------------------
+
+Time: 2023-03-30 23:52:52,652
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 23:53:04,615
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-30 23:53:04,814
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 23:53:08,953
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-30 23:53:08,953
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-30 23:53:10,909
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-30 23:53:10,909
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-30 23:53:10 MSK], next run at: 2023-03-30 23:53:10 MSK)" (scheduled at 2023-03-30 23:53:10.902693+03:00)
+
+------------------------
+
+Time: 2023-03-30 23:53:10,977
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-30 23:53:10 MSK], next run at: 2023-03-30 23:53:10 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-30 23:53:42,442
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 23:54:37,538
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-30 23:54:37,737
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 23:54:38,738
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-30 23:54:51,777
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-30 23:54:51,947
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-30 23:54:56,193
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-30 23:54:56,193
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-30 23:55:01,141
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-30 23:55:23,404
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-30 23:55:23,404
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-30 23:55:25,930
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-30 23:56:25,302
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:02:13,271
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:02:13,485
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:02:20,353
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:02:20,353
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-31 00:02:25,307
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:02:25,308
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:02:25 MSK], next run at: 2023-03-31 00:02:25 MSK)" (scheduled at 2023-03-31 00:02:25.301653+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:02:25,386
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:02:25 MSK], next run at: 2023-03-31 00:02:25 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:06:49,487
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:06:51,624
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:06:51,796
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:06:56,314
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:07:01,267
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:07:01,269
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:07:01 MSK], next run at: 2023-03-31 00:07:01 MSK)" (scheduled at 2023-03-31 00:07:01.263619+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:07:01,271
+Level: ERROR
+Message: Job "afk (trigger: date[2023-03-31 00:07:01 MSK], next run at: 2023-03-31 00:07:01 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\afk.py", line 13, in afk
+    await state.finish()
+AttributeError: module 'states.state' has no attribute 'finish'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\afk.py", line 15, in afk
+    logging.error(f"State.\nError: {str(e)}", exc_info=True)
+NameError: name 'e' is not defined
+------------------------
+
+Time: 2023-03-31 00:07:17,409
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:07:19,582
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:07:19,767
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:08:21,651
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:08:26,603
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:08:26,604
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:08:26 MSK], next run at: 2023-03-31 00:08:26 MSK)" (scheduled at 2023-03-31 00:08:26.596104+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:08:26,604
+Level: ERROR
+Message: State.
+Error: module 'states.state' has no attribute 'finish'
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\afk.py", line 13, in afk
+    await state.finish()
+AttributeError: module 'states.state' has no attribute 'finish'
+------------------------
+
+Time: 2023-03-31 00:08:26,678
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:08:26 MSK], next run at: 2023-03-31 00:08:26 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:08:54,439
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:08:57,181
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:08:57,371
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:09:05,063
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:09:05,063
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-31 00:09:10,026
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:09:10,028
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:09:10 MSK], next run at: 2023-03-31 00:09:10 MSK)" (scheduled at 2023-03-31 00:09:10.011022+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:09:10,132
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:09:10 MSK], next run at: 2023-03-31 00:09:10 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:09:22,190
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:09:22,191
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-31 00:09:23,760
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:09:23,874
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-31 00:09:23,898
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-31 00:09:24,419
+Level: ERROR
+Message: Database error.
+Error: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/Ty:batchUpdate?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 41, in activate_spreadsheet
+    spreadsheet = await SpreadsheetSet.get(spreadsheet_id=spreadsheet_id)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 1020, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 44, in activate_spreadsheet
+    spreadsheet = await create_spreadsheet(spreadsheet_id=spreadsheet_id, set_id=1)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 30, in create_spreadsheet
+    temp_data = await add_sheets(service, data)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\spreadsheet\requests.py", line 6, in add_sheets
+    result = service.spreadsheets().batchUpdate(
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/Ty:batchUpdate?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+------------------------
+
+Time: 2023-03-31 00:09:30,812
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:09:35,828
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:09:35,829
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:09:35 MSK], next run at: 2023-03-31 00:09:35 MSK)" (scheduled at 2023-03-31 00:09:35.812111+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:09:35,829
+Level: ERROR
+Message: State.
+Error: module 'states.state' has no attribute 'finish'
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\afk.py", line 13, in afk
+    await state.finish()
+AttributeError: module 'states.state' has no attribute 'finish'
+------------------------
+
+Time: 2023-03-31 00:09:36,028
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:09:35 MSK], next run at: 2023-03-31 00:09:35 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:10:52,302
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:10:54,437
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:10:54,651
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:11:00,867
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:11:05,828
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:11:05,830
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:11:05 MSK], next run at: 2023-03-31 00:11:05 MSK)" (scheduled at 2023-03-31 00:11:05.816400+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:11:05,888
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:11:05 MSK], next run at: 2023-03-31 00:11:05 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:11:53,826
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:11:55,797
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:11:55,971
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:11:58,707
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:11:58,707
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-31 00:12:03,662
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:12:03,664
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:12:03 MSK], next run at: 2023-03-31 00:12:03 MSK)" (scheduled at 2023-03-31 00:12:03.649088+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:12:03,734
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:12:03 MSK], next run at: 2023-03-31 00:12:03 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:12:12,767
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:12:57,408
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:12:57,592
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:13:02,960
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:13:07,920
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:13:07,921
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:13:07 MSK], next run at: 2023-03-31 00:13:07 MSK)" (scheduled at 2023-03-31 00:13:07.906930+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:13:08,010
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:13:07 MSK], next run at: 2023-03-31 00:13:07 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:13:22,482
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:13:27,493
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:13:27,493
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:13:27 MSK], next run at: 2023-03-31 00:13:27 MSK)" (scheduled at 2023-03-31 00:13:27.482966+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:13:27,566
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:13:27 MSK], next run at: 2023-03-31 00:13:27 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:13:34,545
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:13:39,546
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:13:39,547
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:13:39 MSK], next run at: 2023-03-31 00:13:39 MSK)" (scheduled at 2023-03-31 00:13:39.544512+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:13:39,680
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:13:39 MSK], next run at: 2023-03-31 00:13:39 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:13:52,564
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:13:57,576
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:13:57,578
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:13:57 MSK], next run at: 2023-03-31 00:13:57 MSK)" (scheduled at 2023-03-31 00:13:57.564976+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:13:57,666
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:13:57 MSK], next run at: 2023-03-31 00:13:57 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:14:09,967
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:14:14,969
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:14:14,970
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:14:14 MSK], next run at: 2023-03-31 00:14:14 MSK)" (scheduled at 2023-03-31 00:14:14.967357+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:14:15,062
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:14:14 MSK], next run at: 2023-03-31 00:14:14 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:14:21,424
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:14:26,453
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:14:26,454
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:14:26 MSK], next run at: 2023-03-31 00:14:26 MSK)" (scheduled at 2023-03-31 00:14:26.424096+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:14:26,548
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:14:26 MSK], next run at: 2023-03-31 00:14:26 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:15:10,453
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:15:23,850
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:15:24,078
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:15:29,975
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:15:34,936
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:15:34,938
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:15:34 MSK], next run at: 2023-03-31 00:15:34 MSK)" (scheduled at 2023-03-31 00:15:34.920831+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:15:35,008
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:15:34 MSK], next run at: 2023-03-31 00:15:34 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:15:41,953
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:15:44,799
+Level: ERROR
+Message: Validation.
+Error: could not convert string to float: 'Hdj'
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 66, in set_amount
+    amount = float(message.text)
+ValueError: could not convert string to float: 'Hdj'
+------------------------
+
+Time: 2023-03-31 00:15:46,961
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:15:46,962
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:15:46 MSK], next run at: 2023-03-31 00:15:46 MSK)" (scheduled at 2023-03-31 00:15:46.953225+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:15:47,030
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:15:46 MSK], next run at: 2023-03-31 00:15:46 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:16:44,984
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:16:50,499
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:16:50,723
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:16:54,686
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:16:59,640
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:16:59,641
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:16:59 MSK], next run at: 2023-03-31 00:16:59 MSK)" (scheduled at 2023-03-31 00:16:59.633974+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:16:59,726
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:16:59 MSK], next run at: 2023-03-31 00:16:59 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:17:41,946
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:17:43,953
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:17:44,144
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:17:51,969
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:17:56,925
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:17:56,927
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:17:56 MSK], next run at: 2023-03-31 00:17:56 MSK)" (scheduled at 2023-03-31 00:17:56.914755+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:17:57,014
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:17:56 MSK], next run at: 2023-03-31 00:17:56 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:21:32,568
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:21:34,621
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:21:34,844
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:21:42,560
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:21:55,309
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:21:55,311
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:21:55 MSK], next run at: 2023-03-31 00:21:55 MSK)" (scheduled at 2023-03-31 00:21:55.305310+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:21:55,390
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:21:55 MSK], next run at: 2023-03-31 00:21:55 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:22:07,340
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:22:18,106
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-31 00:22:18,129
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-31 00:22:20,213
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:22:20,214
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:22:19 MSK], next run at: 2023-03-31 00:22:19 MSK)" (scheduled at 2023-03-31 00:22:19.335537+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:22:20,422
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:22:19 MSK], next run at: 2023-03-31 00:22:19 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:22:55,911
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:23:14,058
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:23:14,058
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:23:14 MSK], next run at: 2023-03-31 00:23:14 MSK)" (scheduled at 2023-03-31 00:23:14.057426+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:23:14,131
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:23:14 MSK], next run at: 2023-03-31 00:23:14 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:23:26,412
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:23:28,445
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:23:28,624
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:23:36,045
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:23:47,372
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-31 00:23:47,394
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-31 00:23:48,897
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:23:55,837
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:23:55,838
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-31 00:24:00,845
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:24:00,845
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:24:00 MSK], next run at: 2023-03-31 00:24:00 MSK)" (scheduled at 2023-03-31 00:24:00.836401+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:24:00,922
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:24:00 MSK], next run at: 2023-03-31 00:24:00 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:24:07,824
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:24:12,832
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:24:12,833
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:24:12 MSK], next run at: 2023-03-31 00:24:12 MSK)" (scheduled at 2023-03-31 00:24:12.823021+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:24:12,900
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:24:12 MSK], next run at: 2023-03-31 00:24:12 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:25:08,561
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 00:25:11,351
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 00:25:11,550
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 00:25:18,049
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:25:23,010
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:25:23,012
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:25:22 MSK], next run at: 2023-03-31 00:25:22 MSK)" (scheduled at 2023-03-31 00:25:22.994107+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:25:23,120
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:25:22 MSK], next run at: 2023-03-31 00:25:22 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:25:28,675
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:25:35,543
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:25:35,544
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:25:35 MSK], next run at: 2023-03-31 00:25:35 MSK)" (scheduled at 2023-03-31 00:25:35.535215+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:25:35,614
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:25:35 MSK], next run at: 2023-03-31 00:25:35 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:25:41,925
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:25:49,334
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:25:49,335
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:25:49 MSK], next run at: 2023-03-31 00:25:49 MSK)" (scheduled at 2023-03-31 00:25:49.321850+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:25:49,401
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:25:49 MSK], next run at: 2023-03-31 00:25:49 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:25:54,184
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:26:00,479
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:26:00,481
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:26:00 MSK], next run at: 2023-03-31 00:26:00 MSK)" (scheduled at 2023-03-31 00:26:00.456484+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:26:00,565
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:26:00 MSK], next run at: 2023-03-31 00:26:00 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:26:05,579
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:26:09,075
 Level: ERROR
 Message: Validation.
 Error: could not convert string to float: 'U'
 Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 45, in set_amount
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 66, in set_amount
     amount = float(message.text)
 ValueError: could not convert string to float: 'U'
 ------------------------
 
-Time: 2023-03-30 13:03:37,663
+Time: 2023-03-31 00:26:12,116
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:26:12,118
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:26:12 MSK], next run at: 2023-03-31 00:26:12 MSK)" (scheduled at 2023-03-31 00:26:12.105637+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:26:12,188
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:26:12 MSK], next run at: 2023-03-31 00:26:12 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:26:18,015
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 00:26:29,357
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 00:26:29,357
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 00:26:29 MSK], next run at: 2023-03-31 00:26:29 MSK)" (scheduled at 2023-03-31 00:26:29.354388+03:00)
+
+------------------------
+
+Time: 2023-03-31 00:26:29,429
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 00:26:29 MSK], next run at: 2023-03-31 00:26:29 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 00:26:49,296
 Level: INFO
 Message: Tortoise-ORM shutdown
 
 ------------------------
 
-Time: 2023-03-30 13:05:09,737
+Time: 2023-03-31 01:00:57,307
 Level: INFO
-Message: WEBHOOK DETECTED
+Message: Scheduler started
 
 ------------------------
 
-Time: 2023-03-30 13:05:22,685
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 13:05:30,464
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 13:05:43,470
-Level: ERROR
-Message: Validation.
-Error: could not convert string to float: '/state'
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 45, in set_amount
-    amount = float(message.text)
-ValueError: could not convert string to float: '/state'
-------------------------
-
-Time: 2023-03-30 13:06:19,353
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 13:06:23,334
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 13:06:51,369
-Level: ERROR
-Message: Validation.
-Error: could not convert string to float: '/cancel'
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 45, in set_amount
-    amount = float(message.text)
-ValueError: could not convert string to float: '/cancel'
-------------------------
-
-Time: 2023-03-30 13:07:09,992
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 13:07:13,792
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 13:07:44,718
-Level: ERROR
-Message: Validation.
-Error: could not convert string to float: '/stat3'
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 45, in set_amount
-    amount = float(message.text)
-ValueError: could not convert string to float: '/stat3'
-------------------------
-
-Time: 2023-03-30 13:09:46,898
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 13:09:50,752
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 13:10:35,929
-Level: ERROR
-Message: Validation.
-Error: could not convert string to float: '/stste'
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 45, in set_amount
-    amount = float(message.text)
-ValueError: could not convert string to float: '/stste'
-------------------------
-
-Time: 2023-03-30 13:17:11,627
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 13:17:15,452
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 13:17:54,858
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 13:22:32,706
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 13:23:03,818
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 13:23:07,425
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 13:43:23,823
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 14:00:30,798
-Level: ERROR
-Message: Loader. Formations of elements.
-Error: Expecting property name enclosed in double quotes: line 9 column 5 (char 260)
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\create_bot.py", line 76, in <module>
-    client_text_file = File(f"{BASE_DIR}{CLIENT_TEXT_PATH}")
-  File "C:\UnderDojoExpensesNEW\src\modules\file.py", line 10, in __init__
-    self.text = self.open_file()
-  File "C:\UnderDojoExpensesNEW\src\modules\file.py", line 18, in open_file
-    text = json.loads(file_data.read())
-  File "C:\Users\juliy\AppData\Local\Programs\Python\Python38-32\lib\json\__init__.py", line 357, in loads
-    return _default_decoder.decode(s)
-  File "C:\Users\juliy\AppData\Local\Programs\Python\Python38-32\lib\json\decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "C:\Users\juliy\AppData\Local\Programs\Python\Python38-32\lib\json\decoder.py", line 353, in raw_decode
-    obj, end = self.scan_once(s, idx)
-json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 9 column 5 (char 260)
-------------------------
-
-Time: 2023-03-30 14:14:27,662
-Level: ERROR
-Message: Loader. Formations of elements.
-Error: Expecting property name enclosed in double quotes: line 9 column 5 (char 260)
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\create_bot.py", line 76, in <module>
-    client_text_file = File(f"{BASE_DIR}{CLIENT_TEXT_PATH}")
-  File "C:\UnderDojoExpensesNEW\src\modules\file.py", line 10, in __init__
-    self.text = self.open_file()
-  File "C:\UnderDojoExpensesNEW\src\modules\file.py", line 18, in open_file
-    text = json.loads(file_data.read())
-  File "C:\Users\juliy\AppData\Local\Programs\Python\Python38-32\lib\json\__init__.py", line 357, in loads
-    return _default_decoder.decode(s)
-  File "C:\Users\juliy\AppData\Local\Programs\Python\Python38-32\lib\json\decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "C:\Users\juliy\AppData\Local\Programs\Python\Python38-32\lib\json\decoder.py", line 353, in raw_decode
-    obj, end = self.scan_once(s, idx)
-json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 9 column 5 (char 260)
-------------------------
-
-Time: 2023-03-30 14:14:58,869
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 14:15:57,748
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 14:16:00,533
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 14:16:41,501
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 14:16:44,282
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 14:49:04,700
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 14:49:08,248
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 14:49:08,480
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 14:49:24,104
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 14:52:33,404
-Level: INFO
-Message: Attempting refresh to obtain initial access_token
-
-------------------------
-
-Time: 2023-03-30 14:52:33,502
-Level: INFO
-Message: Refreshing access_token
-
-------------------------
-
-Time: 2023-03-30 14:53:02,579
-Level: ERROR
-Message: Add entry.
-Error: 'CASHLESS_ID'
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 65, in add_entry
-    await add_entry_to_sheet(service, config, data)
-  File "C:\UnderDojoExpensesNEW\src\spreadsheet\requests.py", line 282, in add_entry_to_sheet
-    "range": {"sheetId": config[f"{data['type']}_ID"],
-KeyError: 'CASHLESS_ID'
-------------------------
-
-Time: 2023-03-30 14:54:14,031
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 14:54:17,167
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 14:54:37,168
-Level: INFO
-Message: Attempting refresh to obtain initial access_token
-
-------------------------
-
-Time: 2023-03-30 14:54:37,267
-Level: INFO
-Message: Refreshing access_token
-
-------------------------
-
-Time: 2023-03-30 14:55:44,713
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 14:55:53,115
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 14:56:34,613
-Level: INFO
-Message: Attempting refresh to obtain initial access_token
-
-------------------------
-
-Time: 2023-03-30 14:56:34,694
-Level: INFO
-Message: Refreshing access_token
-
-------------------------
-
-Time: 2023-03-30 14:56:35,161
-Level: ERROR
-Message: Add entry.
-Error: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/None/values/0%20CASH%21G2?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 65, in add_entry
-    await add_entry_to_sheet(service, config, data)
-  File "C:\UnderDojoExpensesNEW\src\spreadsheet\requests.py", line 269, in add_entry_to_sheet
-    service.
-  File "C:\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
-    return wrapped(*args, **kwargs)
-  File "C:\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\http.py", line 938, in execute
-    raise HttpError(resp, content, uri=self.uri)
-googleapiclient.errors.HttpError: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/None/values/0%20CASH%21G2?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
-------------------------
-
-Time: 2023-03-30 14:56:46,515
-Level: ERROR
-Message: Add entry.
-Error: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/None/values/0%20CASH%21G2?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
-Traceback (most recent call last):
-  File "C:\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 65, in add_entry
-    await add_entry_to_sheet(service, config, data)
-  File "C:\UnderDojoExpensesNEW\src\spreadsheet\requests.py", line 269, in add_entry_to_sheet
-    service.
-  File "C:\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
-    return wrapped(*args, **kwargs)
-  File "C:\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\http.py", line 938, in execute
-    raise HttpError(resp, content, uri=self.uri)
-googleapiclient.errors.HttpError: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/None/values/0%20CASH%21G2?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
-------------------------
-
-Time: 2023-03-30 14:57:35,784
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 14:57:47,438
-Level: INFO
-Message: WEBHOOK DETECTED
-
-------------------------
-
-Time: 2023-03-30 15:53:06,375
-Level: INFO
-Message: Tortoise-ORM shutdown
-
-------------------------
-
-Time: 2023-03-30 15:53:18,996
+Time: 2023-03-31 01:00:57,595
 Level: INFO
 Message: WEBHOOK SET
 
 ------------------------
 
-Time: 2023-03-30 15:53:18,996
+Time: 2023-03-31 01:00:57,595
 Level: INFO
 Message: WEBHOOK DETECTED
 
 ------------------------
 
-Time: 2023-03-30 15:55:30,953
+Time: 2023-03-31 01:02:00,795
+Level: ERROR
+Message: Error: Unknown filter param 'chat_id'. Allowed base values are ['id', 'telegram_chat_id']
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\my_events.py", line 11, in my_chat_member
+    await Chat.get(chat_id=event["chat"]["id"])
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 1000, in __await__
+    self._make_query()
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 962, in _make_query
+    self.resolve_filters(
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 134, in resolve_filters
+    modifier &= node.resolve(model, model._meta.basetable)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\expressions.py", line 359, in resolve
+    return self._resolve_kwargs(model, table)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\expressions.py", line 317, in _resolve_kwargs
+    key, value = self._get_actual_filter_params(model, raw_key, raw_value)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\expressions.py", line 311, in _get_actual_filter_params
+    raise FieldError(f"Unknown filter param '{key}'. Allowed base values are {allowed}")
+tortoise.exceptions.FieldError: Unknown filter param 'chat_id'. Allowed base values are ['id', 'telegram_chat_id']
+------------------------
+
+Time: 2023-03-31 01:02:01,211
+Level: ERROR
+Message: Error: Unknown filter param 'chat_id'. Allowed base values are ['id', 'telegram_chat_id']
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\my_events.py", line 24, in my_chat_member
+    chat = await Chat.get(chat_id=event["chat"]["id"])
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 1000, in __await__
+    self._make_query()
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 962, in _make_query
+    self.resolve_filters(
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 134, in resolve_filters
+    modifier &= node.resolve(model, model._meta.basetable)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\expressions.py", line 359, in resolve
+    return self._resolve_kwargs(model, table)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\expressions.py", line 317, in _resolve_kwargs
+    key, value = self._get_actual_filter_params(model, raw_key, raw_value)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\expressions.py", line 311, in _get_actual_filter_params
+    raise FieldError(f"Unknown filter param '{key}'. Allowed base values are {allowed}")
+tortoise.exceptions.FieldError: Unknown filter param 'chat_id'. Allowed base values are ['id', 'telegram_chat_id']
+------------------------
+
+Time: 2023-03-31 01:02:25,938
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 01:02:28,048
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 01:02:28,235
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 01:03:06,000
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 01:03:31,279
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 01:03:31,468
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 01:03:34,308
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 01:03:36,217
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 01:03:36,384
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 01:10:29,204
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 01:10:32,581
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 01:10:32,805
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 01:10:43,231
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 01:11:10,704
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 01:11:10,902
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 01:11:27,244
+Level: ERROR
+Message: Error: Object does not exist
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\my_events.py", line 39, in my_chat_member
+    chat = await Chat.get(telegram_chat_id=event["chat"]["id"])
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 1020, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+------------------------
+
+Time: 2023-03-31 01:12:59,620
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 01:13:01,529
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 01:13:01,748
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 01:13:20,322
+Level: ERROR
+Message: Error: Object does not exist
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\my_events.py", line 41, in my_chat_member
+    chat = await Chat.get(telegram_chat_id=event["chat"]["id"])
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 1020, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+------------------------
+
+Time: 2023-03-31 01:14:50,741
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 01:14:52,520
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 01:14:52,709
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 01:15:03,559
+Level: ERROR
+Message: Error: Object does not exist
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\my_events.py", line 39, in my_chat_member
+    chat = await Chat.get(telegram_chat_id=event["chat"]["id"])
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 1020, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+------------------------
+
+Time: 2023-03-31 01:16:33,756
+Level: ERROR
+Message: Error: Object does not exist
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\my_events.py", line 39, in my_chat_member
+    chat = await Chat.get(telegram_chat_id=event["chat"]["id"])
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 1020, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+------------------------
+
+Time: 2023-03-31 01:16:54,883
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 01:16:56,965
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 01:16:57,136
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 01:17:04,001
+Level: ERROR
+Message: Error: Object does not exist
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\my_events.py", line 39, in my_chat_member
+    chat = await Chat.get(telegram_chat_id=event["chat"]["id"])
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 1020, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+------------------------
+
+Time: 2023-03-31 01:19:52,934
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 01:20:05,169
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 01:20:05,171
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 01:20:05 MSK], next run at: 2023-03-31 01:20:05 MSK)" (scheduled at 2023-03-31 01:20:05.156109+03:00)
+
+------------------------
+
+Time: 2023-03-31 01:20:05,241
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 01:20:05 MSK], next run at: 2023-03-31 01:20:05 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 01:47:42,471
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 01:47:44,394
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 01:47:44,581
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 01:48:00,876
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 01:48:12,231
 Level: INFO
 Message: Attempting refresh to obtain initial access_token
 
 ------------------------
 
-Time: 2023-03-30 15:55:31,048
+Time: 2023-03-31 01:48:12,254
 Level: INFO
 Message: Refreshing access_token
 
 ------------------------
 
-Time: 2023-03-30 16:10:31,080
+Time: 2023-03-31 01:48:14,016
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 01:48:34,086
 Level: INFO
 Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 01:48:36,158
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 01:48:36,382
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 01:48:40,598
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 01:48:49,171
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-31 01:48:49,195
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-31 01:48:50,843
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 01:51:01,886
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 01:51:03,847
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 01:51:04,032
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 01:51:11,067
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 01:51:21,101
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-31 01:51:21,125
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-31 01:51:22,601
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 01:51:49,592
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 01:52:07,400
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 01:52:46,866
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 01:53:34,612
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 01:53:34,806
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 01:53:37,616
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 01:53:37,616
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-31 01:53:42,570
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 01:53:42,571
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 01:53:42 MSK], next run at: 2023-03-31 01:53:42 MSK)" (scheduled at 2023-03-31 01:53:42.564934+03:00)
+
+------------------------
+
+Time: 2023-03-31 01:53:42,658
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 01:53:42 MSK], next run at: 2023-03-31 01:53:42 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 01:53:47,350
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 01:53:47,350
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-31 01:53:48,827
+Level: INFO
+Message: Removed job 1379132688
 

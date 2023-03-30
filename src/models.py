@@ -16,3 +16,7 @@ class SpreadsheetSet(Model):
     cash_id = fields.IntField()
     active = fields.BooleanField(default=True)
 
+
+class Chat(Model):
+    id = fields.IntField(pk=True)
+    telegram_chat_id = fields.IntField(unique=True)

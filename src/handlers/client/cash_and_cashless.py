@@ -1,9 +1,13 @@
+import datetime
+
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Text
 from create_bot import *
 from aiogram.dispatcher.filters import ChatTypeFilter
 
+from handlers.client.afk import afk
 from handlers.client.menu import menu_owner, menu_staff
+from handlers.client.notifications import notification_owner_chats
 from models import User
 from spreadsheet import add_entry
 from states.state import Cashless, Cash
@@ -14,13 +18,20 @@ from states.state import Cashless, Cash
     text="add_entry:cash",
     state=[UserCondition.Owner, UserCondition.Staff]
 )
-async def cash_start(callback: types.CallbackQuery) -> None:
+async def cash_start(callback: types.CallbackQuery, state: FSMContext) -> None:
     # Response to the Telegram server
     await callback.answer()
     await Cash.Date.set()
     await callback.message.answer(
         text=client_text.steps["DATE"],
         reply_markup=keyboard.keyboards["SELECT_DATE"]
+    )
+    scheduler.add_job(
+        id=f"{callback.from_user.id}",
+        func=afk,
+        trigger="date",
+        run_date=datetime.datetime.now() + datetime.timedelta(seconds=INPUT_TIME_AFK),
+        args=(state, None, callback)
     )
 
 
@@ -29,13 +40,20 @@ async def cash_start(callback: types.CallbackQuery) -> None:
     text="add_entry:cashless",
     state=UserCondition.Owner
 )
-async def cashless_start(callback: types.CallbackQuery) -> None:
+async def cashless_start(callback: types.CallbackQuery, state: FSMContext) -> None:
     # Response to the Telegram server
     await callback.answer()
     await Cashless.Date.set()
     await callback.message.answer(
         text=client_text.steps["DATE"],
         reply_markup=keyboard.keyboards["SELECT_DATE"]
+    )
+    scheduler.add_job(
+        id=f"{callback.from_user.id}",
+        func=afk,
+        trigger="date",
+        run_date=datetime.datetime.now() + datetime.timedelta(seconds=INPUT_TIME_AFK),
+        args=(state, None, callback)
     )
 
 
@@ -74,6 +92,11 @@ async def set_amount(message: types.Message, state: FSMContext):
             text=client_text.steps["CATEGORY"],
             reply_markup=keyboard.cash["CATEGORY"]
         )
+    scheduler.reschedule_job(
+        job_id=f"{message.from_user.id}",
+        trigger="date",
+        run_date=datetime.datetime.now() + datetime.timedelta(seconds=INPUT_TIME_AFK),
+    )
 
 
 @dp.callback_query_handler(
@@ -91,6 +114,11 @@ async def set_source(callback: types.CallbackQuery, state: FSMContext):
     await callback.message.answer(
         text=client_text.steps["CATEGORY"],
         reply_markup=keyboard.cashless["CATEGORY"]
+    )
+    scheduler.reschedule_job(
+        job_id=f"{callback.from_user.id}",
+        trigger="date",
+        run_date=datetime.datetime.now() + datetime.timedelta(seconds=INPUT_TIME_AFK),
     )
 
 
@@ -114,6 +142,11 @@ async def set_category(callback: types.CallbackQuery, state: FSMContext):
     await state.update_data(category=fConfig.text[element]["CATEGORY"][result])
     await callback.message.answer(
         text=client_text.steps["COMMENTARY"]
+    )
+    scheduler.reschedule_job(
+        job_id=f"{callback.from_user.id}",
+        trigger="date",
+        run_date=datetime.datetime.now() + datetime.timedelta(seconds=INPUT_TIME_AFK),
     )
 
 
@@ -155,6 +188,11 @@ async def set_commentary(message: types.Message, state: FSMContext):
         text=preview,
         reply_markup=keyboard.keyboards["ADD_ENTRY"]
     )
+    scheduler.reschedule_job(
+        job_id=f"{message.from_user.id}",
+        trigger="date",
+        run_date=datetime.datetime.now() + datetime.timedelta(seconds=INPUT_TIME_AFK),
+    )
 
 
 @dp.callback_query_handler(
@@ -173,6 +211,7 @@ async def add_entry_accept(callback: types.CallbackQuery, state: FSMContext, use
             await callback.message.answer(
                 text=client_text.messages["ADD_ENTRY_ACCEPT"]
             )
+            await notification_owner_chats(data, sender=callback.from_user.id)
         else:
             await callback.message.answer(
                 text=client_text.errors["ERROR"]
@@ -186,3 +225,6 @@ async def add_entry_accept(callback: types.CallbackQuery, state: FSMContext, use
         await menu_owner(callback=callback)
     elif user.role == 0:
         await menu_staff(callback=callback)
+    scheduler.remove_job(
+        job_id=f"{callback.from_user.id}"
+    )

@@ -32,6 +32,11 @@ async def simple_date(callback: types.CallbackQuery, state: FSMContext) -> None:
     await callback.message.answer(
         text=client_text.steps["AMOUNT"]
     )
+    scheduler.reschedule_job(
+        job_id=f"{callback.from_user.id}",
+        trigger="date",
+        run_date=datetime.datetime.now() + datetime.timedelta(seconds=INPUT_TIME_AFK),
+    )
 
 
 # Calling calendar. Creating a new record. Step 1
@@ -40,11 +45,16 @@ async def simple_date(callback: types.CallbackQuery, state: FSMContext) -> None:
     text="calendar",
     state=[Cashless.Date, Cash.Date]
 )
-async def calendar(call: types.CallbackQuery, state: FSMContext):
-    await call.answer()
-    await call.message.answer(
+async def calendar(callback: types.CallbackQuery, state: FSMContext):
+    await callback.answer()
+    await callback.message.answer(
         text=client_text.steps["DATE"],
         reply_markup=await SimpleCalendar().start_calendar()
+    )
+    scheduler.reschedule_job(
+        job_id=f"{callback.from_user.id}",
+        trigger="date",
+        run_date=datetime.datetime.now() + datetime.timedelta(seconds=INPUT_TIME_AFK),
     )
 
 
@@ -63,3 +73,8 @@ async def set_date(callback: types.CallbackQuery, callback_data: dict, state: FS
         await callback.message.answer(
             text=client_text.steps["AMOUNT"]
         )
+    scheduler.reschedule_job(
+        job_id=f"{callback.from_user.id}",
+        trigger="date",
+        run_date=datetime.datetime.now() + datetime.timedelta(seconds=INPUT_TIME_AFK),
+    )

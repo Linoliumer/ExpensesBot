@@ -9,8 +9,10 @@ from modules import *
 from states import *
 from models import SpreadsheetSet
 from tortoise.exceptions import DoesNotExist
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from oauth2client.service_account import ServiceAccountCredentials
 import httplib2
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -54,6 +56,7 @@ WEBAPP_HOST = fConfig.text['WEBAPP']['HOST']
 WEBAPP_PORT = fConfig.text['WEBAPP']['PORT']
 
 SPREADSHEET_CHAT_LEN = 100
+INPUT_TIME_AFK = 5
 
 """----------CREATING_BOT----------"""
 
@@ -105,3 +108,8 @@ async def cashless_url() -> str:
     return fConfig.text["SPREADSHEET"]["URL"].format(
         fConfig.text["SPREADSHEET"]["SPREADSHEET_ID"], fConfig.text["SPREADSHEET"]["CASHLESS_ID"]
     )
+
+"""----------TASK SCHEDULER----------"""
+
+
+scheduler = AsyncIOScheduler()

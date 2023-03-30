@@ -27,25 +27,29 @@ async def create_spreadsheet(spreadsheet_id: str, set_id: int):
     data = {}
     data["SPREADSHEET_ID"] = spreadsheet_id
     data["SET_ID"] = set_id
-    data = await add_sheets(service, data)
+    temp_data = await add_sheets(service, data)
     return await SpreadsheetSet(
-        spreadsheet_id=data["SPREADSHEET_ID"],
-        cashless_id=data["CASHLESS_ID"],
-        cash_id=data["CASH_ID"],
+        spreadsheet_id=temp_data["SPREADSHEET_ID"],
+        cashless_id=temp_data["CASHLESS_ID"],
+        cash_id=temp_data["CASH_ID"],
         active=True
     )
 
 
 async def activate_spreadsheet(spreadsheet_id: str) -> bool:
-    ok = await deactivate_spreadsheet()
-    if ok:
+    try:
+        spreadsheet = await SpreadsheetSet.get(spreadsheet_id=spreadsheet_id)
+    except DoesNotExist:
         try:
-            spreadsheet = await SpreadsheetSet.get(spreadsheet_id=spreadsheet_id)
-        except DoesNotExist:
             spreadsheet = await create_spreadsheet(spreadsheet_id=spreadsheet_id, set_id=1)
         except Exception as e:
             logging.error(f"Database error.\nError: {str(e)}", exc_info=True)
             return False
+    except Exception as e:
+        logging.error(f"Database error.\nError: {str(e)}", exc_info=True)
+        return False
+    ok = await deactivate_spreadsheet()
+    if ok:
         spreadsheet.active = True
         try:
             await spreadsheet.save()
@@ -57,7 +61,8 @@ async def activate_spreadsheet(spreadsheet_id: str) -> bool:
         fConfig.text["SPREADSHEET"]["CASHLESS_ID"] = spreadsheet.cashless_id
         fConfig.text["SPREADSHEET"]["SET_ID"] = spreadsheet.id
         return True
-    return False
+    else:
+        return False
 
 
 async def add_entry(service, config, data) -> bool:
