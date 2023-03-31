@@ -1,0 +1,565 @@
+------------------------
+
+Time: 2023-03-31 04:50:12,038
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 04:50:12,818
+Level: INFO
+Message: WEBHOOK SET
+
+------------------------
+
+Time: 2023-03-31 04:50:12,818
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 04:52:44,804
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 04:52:44,804
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-31 04:52:46,140
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 04:52:46,263
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-31 04:52:46,286
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-31 04:53:11,148
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 04:53:36,577
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 04:53:36,577
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 04:53:36 MSK], next run at: 2023-03-31 04:53:36 MSK)" (scheduled at 2023-03-31 04:53:36.567603+03:00)
+
+------------------------
+
+Time: 2023-03-31 04:53:36,764
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 04:53:36 MSK], next run at: 2023-03-31 04:53:36 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 04:53:40,396
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 04:53:42,658
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 04:53:42,871
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 04:54:01,651
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 04:54:08,468
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 04:54:11,584
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 04:54:43,284
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 04:54:43,284
+Level: INFO
+Message: Running job "afk (trigger: date[2023-03-31 04:54:43 MSK], next run at: 2023-03-31 04:54:43 MSK)" (scheduled at 2023-03-31 04:54:43.280663+03:00)
+
+------------------------
+
+Time: 2023-03-31 04:54:43,497
+Level: INFO
+Message: Job "afk (trigger: date[2023-03-31 04:54:43 MSK], next run at: 2023-03-31 04:54:43 MSK)" executed successfully
+
+------------------------
+
+Time: 2023-03-31 04:55:17,026
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 04:55:27,757
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-31 04:55:27,780
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-31 04:55:29,475
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 04:55:48,920
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 04:55:57,254
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 04:57:24,972
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 04:57:50,960
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 04:58:23,739
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 04:58:23,955
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 04:58:52,309
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 04:59:09,930
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 04:59:10,344
+Level: INFO
+Message: WEBHOOK SET
+
+------------------------
+
+Time: 2023-03-31 04:59:10,344
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 04:59:16,138
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 04:59:34,306
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-31 04:59:34,329
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-31 04:59:36,173
+Level: INFO
+Message: Removed job 5521228235
+
+------------------------
+
+Time: 2023-03-31 05:00:01,807
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:00:21,142
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 05:01:42,954
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 05:01:44,939
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 05:01:45,116
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 05:01:54,805
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:02:20,110
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 05:02:22,092
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 05:02:22,297
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 05:02:49,884
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 05:02:59,291
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 05:02:59,571
+Level: INFO
+Message: WEBHOOK SET
+
+------------------------
+
+Time: 2023-03-31 05:02:59,571
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 05:03:07,511
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:03:15,837
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-31 05:03:15,860
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-31 05:03:17,646
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 05:03:50,490
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:04:07,032
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 05:04:10,776
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:04:10,777
+Level: INFO
+Message: Job input_spreadsheetId 1379132688 - start
+
+------------------------
+
+Time: 2023-03-31 05:04:13,626
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 05:04:13,913
+Level: ERROR
+Message: Database error.
+Error: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/7%D1%88%D1%88:batchUpdate?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 41, in activate_spreadsheet
+    spreadsheet = await SpreadsheetSet.get(spreadsheet_id=spreadsheet_id)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\tortoise\queryset.py", line 1020, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 44, in activate_spreadsheet
+    spreadsheet = await create_spreadsheet(spreadsheet_id=spreadsheet_id, set_id=1)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\spreadsheet\instructions.py", line 30, in create_spreadsheet
+    temp_data = await add_sheets(service, data)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\spreadsheet\requests.py", line 6, in add_sheets
+    result = service.spreadsheets().batchUpdate(
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\venv\lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 404 when requesting https://sheets.googleapis.com/v4/spreadsheets/7%D1%88%D1%88:batchUpdate?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+------------------------
+
+Time: 2023-03-31 05:05:23,877
+Level: INFO
+Message: Tortoise-ORM shutdown
+
+------------------------
+
+Time: 2023-03-31 05:05:37,553
+Level: INFO
+Message: Scheduler started
+
+------------------------
+
+Time: 2023-03-31 05:05:37,727
+Level: INFO
+Message: WEBHOOK DETECTED
+
+------------------------
+
+Time: 2023-03-31 05:05:46,595
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:06:07,521
+Level: INFO
+Message: Attempting refresh to obtain initial access_token
+
+------------------------
+
+Time: 2023-03-31 05:06:07,544
+Level: INFO
+Message: Refreshing access_token
+
+------------------------
+
+Time: 2023-03-31 05:06:09,304
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 05:06:14,436
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:06:27,241
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 05:06:50,424
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:06:53,838
+Level: ERROR
+Message: Validation.
+Error: could not convert string to float: 'Ãðð7'
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 67, in set_amount
+    amount = float(message.text)
+ValueError: could not convert string to float: 'Ãðð7'
+------------------------
+
+Time: 2023-03-31 05:07:01,433
+Level: INFO
+Message: Removed job 5521228235
+
+------------------------
+
+Time: 2023-03-31 05:07:59,717
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:08:08,451
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 05:08:13,874
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:08:16,990
+Level: ERROR
+Message: Validation.
+Error: could not convert string to float: 'Îîü'
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 67, in set_amount
+    amount = float(message.text)
+ValueError: could not convert string to float: 'Îîü'
+------------------------
+
+Time: 2023-03-31 05:08:25,575
+Level: INFO
+Message: Removed job 1379132688
+
+------------------------
+
+Time: 2023-03-31 05:08:33,186
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:08:41,828
+Level: INFO
+Message: Removed job 5521228235
+
+------------------------
+
+Time: 2023-03-31 05:08:43,014
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:08:45,512
+Level: ERROR
+Message: Validation.
+Error: could not convert string to float: 'Íî'
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 67, in set_amount
+    amount = float(message.text)
+ValueError: could not convert string to float: 'Íî'
+------------------------
+
+Time: 2023-03-31 05:08:52,129
+Level: INFO
+Message: Removed job 5521228235
+
+------------------------
+
+Time: 2023-03-31 05:08:53,120
+Level: INFO
+Message: Added job "afk" to job store "default"
+
+------------------------
+
+Time: 2023-03-31 05:08:56,707
+Level: ERROR
+Message: Validation.
+Error: could not convert string to float: 'Ëîðí'
+Traceback (most recent call last):
+  File "C:\Users\linoliumer\PycharmProjects\UnderDojoExpensesNEW\src\handlers\client\cash_and_cashless.py", line 67, in set_amount
+    amount = float(message.text)
+ValueError: could not convert string to float: 'Ëîðí'
+------------------------
+
+Time: 2023-03-31 05:09:04,324
+Level: INFO
+Message: Removed job 5521228235
+
+------------------------
+
+Time: 2023-03-31 05:09:24,719
+Level: INFO
+Message: Tortoise-ORM shutdown
+

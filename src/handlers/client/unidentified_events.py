@@ -30,3 +30,9 @@ async def known_message_handler(message: types.Message):
     await message.answer(
         text=client_text.messages["UNIDENTIFIED"]
     )
+
+
+@dp.callback_query_handler(ChatTypeFilter(types.ChatType.PRIVATE), state="*")
+async def answer(callback: types.CallbackQuery):
+    await callback.answer()
+

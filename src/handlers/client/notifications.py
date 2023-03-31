@@ -16,7 +16,10 @@ async def notification_owner_chats(data, sender: int) -> None:
     ids = [owner.telegram_id for owner in owners]
     for chat in chats:
         ids.append(chat.telegram_chat_id)
-    ids.remove(sender)
+    try:
+        ids.remove(sender)
+    except:
+        pass
     for id in ids:
         print(id)
         try:

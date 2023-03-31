@@ -203,6 +203,11 @@ async def set_commentary(message: types.Message, state: FSMContext):
 async def add_entry_accept(callback: types.CallbackQuery, state: FSMContext, user: User) -> None:
     # Get data
     await callback.answer()
+    state_now = await state.get_state()
+    if state_now == "Cashless:Accept":
+        await Cashless.Finish.set()
+    else:
+        await Cash.Finish.set()
     data = await state.get_data()
     result = str(callback.data).split(':')[1]
     if result == "accept":
