@@ -1,9 +1,9 @@
 {
   "TELEGRAM": {
-    "BOT_TOKEN" : "5628797131:AAHjRTSKejHe-Fi2uIvNWn_Ssc6woD3HjS0"
+    "BOT_TOKEN" : ""
   },
   "WEBHOOK": {
-    "HOST": "https://1d95-178-70-167-189.eu.ngrok.io",
+    "HOST": "",
     "PATH": "/bot/"
   },
   "WEBAPP": {
@@ -11,8 +11,8 @@
     "PORT": 8080
   },
   "PASSWORD": {
-    "OWNER": "GOD",
-    "STAFF": "RAB"
+    "OWNER": "",
+    "STAFF": ""
   },
   "SPREADSHEET": {
     "URL": "https://docs.google.com/spreadsheets/d/{}/edit#gid={}",
