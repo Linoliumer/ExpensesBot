@@ -1,12 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "dojoexpensesalpha-2022",
-  "private_key_id": "d24add75d5739380a1d772ea26b36dffbbf0c07f",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDCWkuZ6WCdHDC3\nO7KdCuNeGgE1AxtXEVswqCX3b2fA0DnMb7X4A1Y3EUbMb0gv//s6n88QS1qaNxcj\n6va43tQLiNZZ8bCAIJnORerbXMK4N90DZhXgwZqqx0Pv7vl5I84ANez166ghBXsQ\nRD9wng+MCeJQLcZVKT+ztnlgbYwRARBLnSonXcV36dzPNc3dIGq7pDIeSc7yR5bQ\nnYwIqOnbpTxHi+b47/LlDkJ2cCEROyWccR5CLt1n2wHIq7Wbnkj5Y/CJH5faUTwj\nbaakOJHVhedc4TicJanSvgv1WFC3DF+c3MYAecaZPcCjqz3JLahtSFT7N0VZHsWm\n2XqT8wqPAgMBAAECggEAGvo/rkCX2ZcVKAoQU/4z61b+veYNgHt3RfzBMGR1aW09\n6KPFBYUpDYHHaw8zXP5SWCPgsSlUjT2CZ8jwsF613lgDMP78efyMfPZ1kDeDC+Et\nO5CLDuSw3G3Gf2KTnH4c1SinGMe6UcMZ/vsKN06pZ83jbS+9bQrJvd9hX8I1BBL8\nanKX3Cj97fZrca7wuic68CHmYqzrcgKyHJxKtxCBt7RKPR9TN1AZyPzCBCWnaj/0\nrOwCYSIamVaHb/U6N6qejY+WqniASyfQxNDGxd7678FdpVGy0no97w0Fntob/p4K\neDqXubldes2FBnjf9RL70s0v3tkum/rOlmwQa5NJMQKBgQD5Q6CgiocMDWx3u50W\n6cHB3kN3CyySRSRibexMOa+2USHkTTX5m0gjdsoVJCyjkiWit5Mxc5A3X2z0K7Fn\n7YpFN1Vj2G4TNejP4yAtkSGvLlncU2JCcvI4G/zfYcE2LWzIXZkYQAnHkGLrxJ10\n42W44rqfWH350UupTnvlxSmViQKBgQDHmsxviGJi4humMTflxl+OvVRj7vjueVqV\nPRzS3TTlE96pzPwBuNoftwYnYuBOFNAIbVw9/YR06giqvVl4y5MfPzJPgnsgwDVS\nFx3l2ZqelkdikJ66m/ykTa1CauffgVIdpELdKR64B53awMbbY0OXPYfr8nI5zA4i\nh5/UeSIxVwKBgQCcqKE6ZPXtYD5snfBj5zRMSQmztsUjhOsSJa3eVl8VwbYAS3qB\nztMu3sixMtQPVZnrw15yNQRNmN7cMt3DyKofSGCVaP/9eONCTKf7m3xFImd9rrZR\ntvZ+xzBNoJ2TFEeLQjAm6pB66UcSkLa5MPXMlkrePPqn2J+p39bEmP7CqQKBgQC9\nbp74drIQ8E+XQPywt7x2ph5SHTjocglSu0YApOkPQvU9pwm/xKRWFwfjF0aTM9Nf\nPBKfzlsH7hg9migwqNs+e2aO6OFb6q5v8vpv6j2AplSnKWNK7MEvWXzGHNlkV8IL\n2ZmPdPfvZWMdeXkAOsup3D6D4XsgeRUtFhPMvQ2DTwKBgEDBgUpyPsxXIGtZRczL\npVCSCdovUEJUS4/eRiOkmCjPu8Gal4vwl0VGhhvgcWYkEm9C1V9rxmgKfWbxfUbM\nVIgbHFwDbkm057XFQKBPXZ0OrOai+jsx7bunVQdAY1s7hHcr/U9k2XhesYDd6oDl\nX9nuEPJiIE9rWi8NWdW3S2FU\n-----END PRIVATE KEY-----\n",
-  "client_email": "dojoexpensesalpha-acc@dojoexpensesalpha-2022.iam.gserviceaccount.com",
-  "client_id": "115835767309041014680",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dojoexpensesalpha-acc%40dojoexpensesalpha-2022.iam.gserviceaccount.com"
-}
+
